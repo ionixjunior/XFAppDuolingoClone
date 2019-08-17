@@ -403,3 +403,6 @@ ASALocalRun/
 
 # Local History for Visual Studio
 .localhistory/
+
+# Android Resource
+AppDuolingoClone.Android/Resources/Resource.designer.cs
