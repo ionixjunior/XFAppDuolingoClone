@@ -1,4 +1,5 @@
 ﻿using System;
+using AppDuolingoClone.ViewModels;
 using AppDuolingoClone.Views;
 using Prism;
 using Prism.DryIoc;
@@ -23,11 +24,11 @@ namespace AppDuolingoClone
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry.RegisterForNavigation<MainPage>();
-            containerRegistry.RegisterForNavigation<LessonsView>();
-            containerRegistry.RegisterForNavigation<TrainingView>();
-            containerRegistry.RegisterForNavigation<ProfileView>();
-            containerRegistry.RegisterForNavigation<RankingView>();
-            containerRegistry.RegisterForNavigation<StoreView>();
+            containerRegistry.RegisterForNavigation<LessonsView, LessonsViewModel>();
+            containerRegistry.RegisterForNavigation<TrainingView, TrainingViewModel>();
+            containerRegistry.RegisterForNavigation<ProfileView, ProfileViewModel>();
+            containerRegistry.RegisterForNavigation<RankingView, RankingViewModel>();
+            containerRegistry.RegisterForNavigation<StoreView, StoreViewModel>();
         }
 
         protected override void OnStart()
