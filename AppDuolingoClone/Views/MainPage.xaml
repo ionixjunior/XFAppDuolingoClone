@@ -5,6 +5,10 @@
     xmlns:d="http://xamarin.com/schemas/2014/forms/design"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:views="clr-namespace:AppDuolingoClone.Views"
+    xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+    android:TabbedPage.ToolbarPlacement="Bottom"
+    BarBackgroundColor="#2196F3"
+    BarTextColor="White"
     mc:Ignorable="d"
     x:Class="AppDuolingoClone.Views.MainPage"
 >
