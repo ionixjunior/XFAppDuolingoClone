@@ -18,5 +18,7 @@
     <Folder Include="Views\" />
     <Folder Include="ViewModels\" />
     <Folder Include="Controls\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Views\TitleViews\" />
   </ItemGroup>
 </Project>

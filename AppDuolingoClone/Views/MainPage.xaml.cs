@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AppDuolingoClone.Interfaces;
 using Xamarin.Forms;
 
 namespace AppDuolingoClone.Views
@@ -25,6 +26,20 @@ namespace AppDuolingoClone.Views
             Children.Add(new ProfileView());
             Children.Add(new RankingView());
             Children.Add(new StoreView());
+        }
+
+        protected override void OnCurrentPageChanged()
+        {
+            base.OnCurrentPageChanged();
+
+            if (CurrentPage is IDynamicTitle page)
+            {
+                NavigationPage.SetHasNavigationBar(this, true);
+                NavigationPage.SetTitleView(this, page.GetTitle());
+                return;
+            }
+
+            NavigationPage.SetHasNavigationBar(this, false);
         }
     }
 }
