@@ -6,13 +6,23 @@ using Xamarin.Forms;
 
 namespace AppDuolingoClone.Views
 {
-    public partial class ProfileView : ContentPage, IDynamicTitle
+    public partial class ProfileView : ContentPage, IDynamicTitle, ITabPageIcons
     {
         private View _title;
 
         public ProfileView()
         {
             InitializeComponent();
+        }
+
+        public string GetIcon()
+        {
+            return "tab_profile";
+        }
+
+        public string GetSelectedIcon()
+        {
+            return "tab_profile_selected";
         }
 
         public View GetTitle()
