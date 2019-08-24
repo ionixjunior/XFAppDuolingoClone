@@ -137,4 +137,16 @@
   <ItemGroup>
     <Folder Include="Renderers\" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\tab_lessons_selected.png" />
+    <BundleResource Include="Resources\tab_lessons.png" />
+    <BundleResource Include="Resources\tab_profile_selected.png" />
+    <BundleResource Include="Resources\tab_profile.png" />
+    <BundleResource Include="Resources\tab_ranking_selected.png" />
+    <BundleResource Include="Resources\tab_ranking.png" />
+    <BundleResource Include="Resources\tab_store_selected.png" />
+    <BundleResource Include="Resources\tab_store.png" />
+    <BundleResource Include="Resources\tab_training_selected.png" />
+    <BundleResource Include="Resources\tab_training.png" />
+  </ItemGroup>
 </Project>
