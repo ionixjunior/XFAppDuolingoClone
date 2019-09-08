@@ -136,6 +136,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Renderers\" />
+    <Folder Include="Resources\Fonts\" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\tab_lessons_selected.png" />
@@ -153,5 +154,7 @@
     <BundleResource Include="Resources\navbar_diamont.png" />
     <BundleResource Include="Resources\navbar_english.png" />
     <BundleResource Include="Resources\navbar_fire.png" />
+    <BundleResource Include="Resources\Fonts\DINNextRoundedLTPro-Bold.ttf" />
+    <BundleResource Include="Resources\Fonts\DINNextRoundedLTPro-Regular.ttf" />
   </ItemGroup>
 </Project>

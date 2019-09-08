@@ -154,12 +154,17 @@
     <Folder Include="Resources\drawable-xxhdpi\" />
     <Folder Include="Resources\drawable-xxxhdpi\" />
     <Folder Include="Renderers\" />
+    <Folder Include="Assets\Fonts\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AppDuolingoClone\AppDuolingoClone.csproj">
       <Project>{3CFF661C-F0EE-438A-8483-D8AECD17511D}</Project>
       <Name>AppDuolingoClone</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Fonts\DINNextRoundedLTPro-Bold.ttf" />
+    <AndroidAsset Include="Assets\Fonts\DINNextRoundedLTPro-Regular.ttf" />
   </ItemGroup>
  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
