@@ -9,5 +9,10 @@
     x:Class="AppDuolingoClone.App"
 >
     <Application.Resources>
+        <ResourceDictionary>
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="White" />
+            </Style>
+        </ResourceDictionary>
     </Application.Resources>
 </prism:PrismApplication>
