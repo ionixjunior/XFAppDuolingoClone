@@ -10,6 +10,17 @@
 >
     <Application.Resources>
         <ResourceDictionary>
+            <OnPlatform 
+                x:Key="FontBold" 
+                x:TypeArguments="x:String" 
+                Android="Fonts/DINNextRoundedLTPro-Bold.ttf#DINNextRounded" 
+                iOS="DINNextRoundedLTPro-Bold" 
+            />
+
+            <Style TargetType="Label">
+                <Setter Property="FontFamily" Value="{StaticResource FontBold}" />
+            </Style>
+
             <Style TargetType="NavigationPage">
                 <Setter Property="BarBackgroundColor" Value="White" />
             </Style>
