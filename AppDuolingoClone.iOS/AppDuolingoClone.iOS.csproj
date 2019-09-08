@@ -154,7 +154,11 @@
     <BundleResource Include="Resources\navbar_diamont.png" />
     <BundleResource Include="Resources\navbar_english.png" />
     <BundleResource Include="Resources\navbar_fire.png" />
-    <BundleResource Include="Resources\Fonts\DINNextRoundedLTPro-Bold.ttf" />
-    <BundleResource Include="Resources\Fonts\DINNextRoundedLTPro-Regular.ttf" />
+    <BundleResource Include="Resources\Fonts\DINNextRoundedLTPro-Bold.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\Fonts\DINNextRoundedLTPro-Regular.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
   </ItemGroup>
 </Project>
