@@ -5,6 +5,27 @@
     x:Class="AppDuolingoClone.Views.TitleViews.ProfileTitleView"
 >
     <ContentView.Content>
-        <Label Text="Profile TitleView" />
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="80" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="80" />
+            </Grid.ColumnDefinitions>
+
+            <Label
+                Grid.Column="1"
+                Text="Perfil"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                FontSize="Large"
+                TextColor="#b0afaf"
+            />
+
+            <Image
+                Grid.Column="2"
+                Source="navbar_configuration.png"
+                HeightRequest="40"
+            />
+        </Grid>
     </ContentView.Content>
 </ContentView>
