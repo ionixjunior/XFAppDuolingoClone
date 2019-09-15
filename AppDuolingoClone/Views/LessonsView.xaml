@@ -28,6 +28,7 @@
                 VerticalOptions="End"
                 Command="{Binding NavigateToTrainingCommand}"
                 BackgroundColor="White"
+                ImageSource="fab_training"
             />
         </AbsoluteLayout>
     </ContentPage.Content>
