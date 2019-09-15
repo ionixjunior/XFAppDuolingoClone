@@ -3,6 +3,7 @@ using Android.Content;
 using Android.Support.Design.BottomNavigation;
 using Android.Support.Design.Widget;
 using AppDuolingoClone.Droid.Renderers;
+using AppDuolingoClone.Droid.Utils;
 using AppDuolingoClone.Interfaces;
 using AppDuolingoClone.Views;
 using Xamarin.Forms;
@@ -58,21 +59,16 @@ namespace AppDuolingoClone.Droid.Renderers
                 {
                     if (_formsTabs.Children[index] == _formsTabs.CurrentPage)
                     {
-                        iconId = GetIconIdByFileName(tabPage.GetSelectedIcon());
+                        iconId = ResourceUtil.GetDrawableIdByFileName(tabPage.GetSelectedIcon(), Context);
                         androidTab.SetIcon(iconId);
                         continue;
                     }
 
-                    iconId = GetIconIdByFileName(tabPage.GetIcon());
+                    iconId = ResourceUtil.GetDrawableIdByFileName(tabPage.GetIcon(), Context);
                     androidTab.SetIcon(iconId);
                     continue;
                 }
             }
-        }
-
-        private int GetIconIdByFileName(string fileName)
-        {
-            return Resources.GetIdentifier(fileName, "drawable", Context.PackageName);
         }
 
         private void OnCurrentPageChanged(object sender, EventArgs e)

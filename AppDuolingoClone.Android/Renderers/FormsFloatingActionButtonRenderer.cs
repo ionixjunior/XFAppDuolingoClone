@@ -4,6 +4,7 @@ using Android.Content.Res;
 using Android.Support.Design.Widget;
 using AppDuolingoClone.Controls;
 using AppDuolingoClone.Droid.Renderers;
+using AppDuolingoClone.Droid.Utils;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 
@@ -53,7 +54,7 @@ namespace AppDuolingoClone.Droid.Renderers
             if (fileName == null)
                 return;
 
-            var resourceId = Resources.GetIdentifier(fileName, "drawable", Context.PackageName);
+            var resourceId = ResourceUtil.GetDrawableIdByFileName(fileName, Context);
             _floatingActionButton.SetImageResource(resourceId);
         }
 
