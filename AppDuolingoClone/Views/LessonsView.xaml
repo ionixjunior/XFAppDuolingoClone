@@ -27,6 +27,7 @@
                 HorizontalOptions="End"
                 VerticalOptions="End"
                 Command="{Binding NavigateToTrainingCommand}"
+                BackgroundColor="White"
             />
         </AbsoluteLayout>
     </ContentPage.Content>
