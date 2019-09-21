@@ -4,6 +4,7 @@ namespace AppDuolingoClone.Enums
     public enum LessonGroupTypeEnum
     {
         Single,
-        Multi
+        Multi,
+        Bonus
     }
 }

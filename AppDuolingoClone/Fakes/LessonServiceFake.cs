@@ -32,6 +32,17 @@ namespace AppDuolingoClone.Fakes
                             GetNewLesson("Saudações"),
                             GetNewLesson("Viagem")
                         }
+                    },
+
+                    new LessonGroup
+                    {
+                        Type = LessonGroupTypeEnum.Bonus,
+                        Lessons = new List<Lesson>
+                        {
+                            GetNewLesson("Bônus"),
+                            GetNewLesson("Bônus"),
+                            GetNewLesson("Bônus")
+                        }
                     }
                 };
             });

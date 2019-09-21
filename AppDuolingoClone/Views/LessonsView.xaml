@@ -3,6 +3,7 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:controls="clr-namespace:AppDuolingoClone.Controls"
+    xmlns:templates="clr-namespace:AppDuolingoClone.Templates"
     x:Class="AppDuolingoClone.Views.LessonsView"
 >
     <ContentPage.Content>
@@ -11,13 +12,11 @@
                 AbsoluteLayout.LayoutBounds="1,1,1,1"
                 AbsoluteLayout.LayoutFlags="All"
             >
-                <StackLayout>
-                    <Label Text="Lessons view" FontSize="60" Margin="0,50,0,50" />
-                    <Label Text="Lessons view" FontSize="60" Margin="0,50,0,50" />
-                    <Label Text="Lessons view" FontSize="60" Margin="0,50,0,50" />
-                    <Label Text="Lessons view" FontSize="60" Margin="0,50,0,50" />
-                    <Label Text="Lessons view" FontSize="60" Margin="0,50,0,50" />
-                </StackLayout>
+                <FlexLayout
+                    Direction="Column"
+                    BindableLayout.ItemsSource="{Binding LessonGroup}"
+                    BindableLayout.ItemTemplateSelector="{templates:LessonGroupDataTemplateSelector}"
+                />
             </ScrollView>
 
             <controls:FormsFloatingActionButton
