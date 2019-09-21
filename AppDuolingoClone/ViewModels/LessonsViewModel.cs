@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Input;
+using AppDuolingoClone.Interfaces;
 using Prism.Commands;
 
 namespace AppDuolingoClone.ViewModels
@@ -8,7 +9,7 @@ namespace AppDuolingoClone.ViewModels
     {
         public ICommand NavigateToTrainingCommand { get; private set; }
 
-        public LessonsViewModel()
+        public LessonsViewModel(ILessonService lessonService)
         {
             NavigateToTrainingCommand = new DelegateCommand(NavigateToTrainingExecute);
         }

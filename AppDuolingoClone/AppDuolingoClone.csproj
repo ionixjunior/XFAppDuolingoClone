@@ -21,5 +21,8 @@
     <Folder Include="Controls\" />
     <Folder Include="Interfaces\" />
     <Folder Include="Views\TitleViews\" />
+    <Folder Include="Models\" />
+    <Folder Include="Fakes\" />
+    <Folder Include="Enums\" />
   </ItemGroup>
 </Project>

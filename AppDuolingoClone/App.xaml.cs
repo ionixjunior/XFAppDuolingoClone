@@ -1,4 +1,6 @@
 ﻿using System;
+using AppDuolingoClone.Fakes;
+using AppDuolingoClone.Interfaces;
 using AppDuolingoClone.ViewModels;
 using AppDuolingoClone.Views;
 using Prism;
@@ -35,6 +37,8 @@ namespace AppDuolingoClone
             containerRegistry.RegisterForNavigation<ProfileView, ProfileViewModel>();
             containerRegistry.RegisterForNavigation<RankingView, RankingViewModel>();
             containerRegistry.RegisterForNavigation<StoreView, StoreViewModel>();
+
+            containerRegistry.Register<ILessonService, LessonServiceFake>();
         }
 
         protected override void OnStart()
