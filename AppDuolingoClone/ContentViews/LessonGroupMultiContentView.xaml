@@ -5,6 +5,6 @@
     x:Class="AppDuolingoClone.ContentViews.LessonGroupMultiContentView"
 >
     <ContentView.Content>
-        <Label Text="Multi template" />
+        <Label Text="Multi template" FontSize="50" />
     </ContentView.Content>
 </ContentView>
