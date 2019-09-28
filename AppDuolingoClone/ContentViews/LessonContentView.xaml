@@ -26,7 +26,16 @@
                     Source="navbar_crown"
                     HorizontalOptions="End"
                     VerticalOptions="End"
-                    WidthRequest="45"
+                    WidthRequest="50"
+                />
+
+                <Label
+                    Text="{Binding Level}"
+                    TextColor="#ce8830"
+                    FontSize="20"
+                    HorizontalOptions="End"
+                    VerticalOptions="End"
+                    Margin="0,0,18,5"
                 />
             </Grid>
 

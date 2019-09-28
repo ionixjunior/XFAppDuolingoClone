@@ -20,7 +20,7 @@ namespace AppDuolingoClone.Fakes
                         Type = LessonGroupTypeEnum.Single,
                         Lessons = new List<Lesson>
                         {
-                            GetNewLesson("Introdução")
+                            GetNewLesson("Introdução", "4")
                         }
                     },
 
@@ -29,8 +29,8 @@ namespace AppDuolingoClone.Fakes
                         Type = LessonGroupTypeEnum.Multi,
                         Lessons = new List<Lesson>
                         {
-                            GetNewLesson("Saudações"),
-                            GetNewLesson("Viagem")
+                            GetNewLesson("Saudações", "4"),
+                            GetNewLesson("Viagem", string.Empty)
                         }
                     },
 
@@ -39,20 +39,21 @@ namespace AppDuolingoClone.Fakes
                         Type = LessonGroupTypeEnum.Bonus,
                         Lessons = new List<Lesson>
                         {
-                            GetNewLesson("Bônus"),
-                            GetNewLesson("Bônus"),
-                            GetNewLesson("Bônus")
+                            GetNewLesson("Bônus", string.Empty),
+                            GetNewLesson("Bônus", string.Empty),
+                            GetNewLesson("Bônus", string.Empty)
                         }
                     }
                 };
             });
         }
 
-        private Lesson GetNewLesson(string name)
+        private Lesson GetNewLesson(string name, string level)
         {
             return new Lesson
             {
-                Name = name
+                Name = name,
+                Level = level
             };
         }
     }
