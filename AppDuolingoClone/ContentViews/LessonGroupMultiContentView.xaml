@@ -8,7 +8,6 @@
     <ContentView.Content>
         <FlexLayout
             Direction="Row"
-            BackgroundColor="Red"
             HeightRequest="180"
             BindableLayout.ItemsSource="{Binding Lessons}"
             AlignItems="Center"

@@ -6,6 +6,35 @@
     Margin="15,0"
 >
     <ContentView.Content>
-        <Label Text="{Binding Name}" FontSize="25" />
+        <StackLayout
+            Spacing="15"
+        >
+            <Grid
+                WidthRequest="100"
+                HeightRequest="100"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+            >
+                <BoxView
+                    BackgroundColor="DeepPink"
+                    CornerRadius="50"
+                    WidthRequest="100"
+                    HeightRequest="100"
+                />
+
+                <Image
+                    Source="navbar_crown"
+                    HorizontalOptions="End"
+                    VerticalOptions="End"
+                    WidthRequest="45"
+                />
+            </Grid>
+
+            <Label
+                Text="{Binding Name}"
+                FontSize="25"
+                HorizontalTextAlignment="Center"
+            />
+        </StackLayout>
     </ContentView.Content>
 </ContentView>
