@@ -22,21 +22,23 @@
                     HeightRequest="100"
                 />
 
-                <Image
-                    Source="navbar_crown"
+                <Grid
                     HorizontalOptions="End"
                     VerticalOptions="End"
                     WidthRequest="50"
-                />
+                >
+                    <Image
+                        Source="navbar_crown"
+                    />
 
-                <Label
-                    Text="{Binding Level}"
-                    TextColor="#ce8830"
-                    FontSize="20"
-                    HorizontalOptions="End"
-                    VerticalOptions="End"
-                    Margin="0,0,18,5"
-                />
+                    <Label
+                        Text="{Binding Level}"
+                        TextColor="#ce8830"
+                        FontSize="20"
+                        HorizontalTextAlignment="Center"
+                        VerticalTextAlignment="Center"
+                    />
+                </Grid>
             </Grid>
 
             <Label
