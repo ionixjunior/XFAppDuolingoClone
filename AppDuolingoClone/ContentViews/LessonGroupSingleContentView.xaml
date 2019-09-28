@@ -2,9 +2,23 @@
 <ContentView
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:contentViews="clr-namespace:AppDuolingoClone.ContentViews"
     x:Class="AppDuolingoClone.ContentViews.LessonGroupSingleContentView"
 >
     <ContentView.Content>
-        <Label Text="Single template" FontSize="50" />
+        <FlexLayout
+            Direction="Row"
+            BackgroundColor="Aqua"
+            HeightRequest="180"
+            BindableLayout.ItemsSource="{Binding Lessons}"
+            AlignItems="Center"
+            JustifyContent="Center"
+        >
+            <BindableLayout.ItemTemplate>
+                <DataTemplate>
+                    <contentViews:LessonContentView />
+                </DataTemplate>
+            </BindableLayout.ItemTemplate>
+        </FlexLayout>
     </ContentView.Content>
 </ContentView>
