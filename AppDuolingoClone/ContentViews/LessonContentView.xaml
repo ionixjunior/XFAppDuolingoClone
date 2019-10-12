@@ -28,7 +28,7 @@
                     WidthRequest="50"
                 >
                     <Image
-                        Source="navbar_crown"
+                        Source="crown_stroke"
                     />
 
                     <Label

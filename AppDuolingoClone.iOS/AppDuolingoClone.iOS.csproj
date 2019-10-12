@@ -161,5 +161,6 @@
     <BundleResource Include="Resources\Fonts\DINNextRoundedLTPro-Regular.ttf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </BundleResource>
+    <BundleResource Include="Resources\crown_stroke.png" />
   </ItemGroup>
 </Project>
