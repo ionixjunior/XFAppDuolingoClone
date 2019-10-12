@@ -25,5 +25,6 @@
     <Folder Include="Enums\" />
     <Folder Include="ContentViews\" />
     <Folder Include="Templates\" />
+    <Folder Include="Converters\" />
   </ItemGroup>
 </Project>
