@@ -17,7 +17,7 @@
                 VerticalOptions="Center"
             >
                 <BoxView
-                    BackgroundColor="DeepPink"
+                    BackgroundColor="{Binding Level, Converter={converters:LevelToColorConverter}}"
                     CornerRadius="50"
                     WidthRequest="100"
                     HeightRequest="100"
