@@ -168,5 +168,6 @@
     <BundleResource Include="Resources\lesson_hamburger.png" />
     <BundleResource Include="Resources\lesson_airplane.png" />
     <BundleResource Include="Resources\lesson_plus.png" />
+    <BundleResource Include="Resources\crown_gray_stroke.png" />
   </ItemGroup>
 </Project>
