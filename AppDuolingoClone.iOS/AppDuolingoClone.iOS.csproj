@@ -162,5 +162,11 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </BundleResource>
     <BundleResource Include="Resources\crown_stroke.png" />
+    <BundleResource Include="Resources\lesson_egg.png" />
+    <BundleResource Include="Resources\lesson_baby.png" />
+    <BundleResource Include="Resources\lesson_dialog.png" />
+    <BundleResource Include="Resources\lesson_hamburger.png" />
+    <BundleResource Include="Resources\lesson_airplane.png" />
+    <BundleResource Include="Resources\lesson_plus.png" />
   </ItemGroup>
 </Project>
