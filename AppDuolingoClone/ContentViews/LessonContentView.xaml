@@ -4,23 +4,23 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:converters="clr-namespace:AppDuolingoClone.Converters"
     x:Class="AppDuolingoClone.ContentViews.LessonContentView"
-    Margin="15,0"
+    Margin="10,0"
 >
     <ContentView.Content>
         <StackLayout
             Spacing="15"
         >
             <Grid
-                WidthRequest="100"
-                HeightRequest="100"
+                WidthRequest="90"
+                HeightRequest="90"
                 HorizontalOptions="Center"
                 VerticalOptions="Center"
             >
                 <BoxView
                     BackgroundColor="{Binding Color}"
-                    CornerRadius="50"
-                    WidthRequest="100"
-                    HeightRequest="100"
+                    WidthRequest="90"
+                    HeightRequest="90"
+                    CornerRadius="45"
                 />
 
                 <Image
@@ -51,7 +51,7 @@
 
             <Label
                 Text="{Binding Name}"
-                FontSize="25"
+                FontSize="20"
                 HorizontalTextAlignment="Center"
             />
         </StackLayout>

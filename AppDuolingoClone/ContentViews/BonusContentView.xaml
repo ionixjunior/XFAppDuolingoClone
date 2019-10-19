@@ -31,7 +31,7 @@
             <Label
                 Text="{Binding Name}"
                 TextColor="#aeaeae"
-                FontSize="25"
+                FontSize="20"
                 HorizontalTextAlignment="Center"
             />
         </StackLayout>
