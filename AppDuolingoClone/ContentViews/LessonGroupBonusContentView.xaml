@@ -5,19 +5,35 @@
     xmlns:contentViews="clr-namespace:AppDuolingoClone.ContentViews"
     x:Class="AppDuolingoClone.ContentViews.LessonGroupBonusContentView"
 >
+    <ContentView.Resources>
+        <ResourceDictionary>
+            <Style TargetType="BoxView">
+                <Setter Property="HeightRequest" Value="1" />
+                <Setter Property="BackgroundColor" Value="#dfe0e0" />
+                <Setter Property="Margin" Value="0,15" />
+            </Style>
+        </ResourceDictionary>
+    </ContentView.Resources>
+
     <ContentView.Content>
-        <FlexLayout
-            Direction="Row"
-            HeightRequest="180"
-            BindableLayout.ItemsSource="{Binding Lessons}"
-            AlignItems="Center"
-            JustifyContent="Center"
-        >
-            <BindableLayout.ItemTemplate>
-                <DataTemplate>
-                    <contentViews:BonusContentView />
-                </DataTemplate>
-            </BindableLayout.ItemTemplate>
-        </FlexLayout>
+        <StackLayout>
+            <BoxView />
+
+            <FlexLayout
+                Direction="Row"
+                HeightRequest="180"
+                BindableLayout.ItemsSource="{Binding Lessons}"
+                AlignItems="Center"
+                JustifyContent="Center"
+            >
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate>
+                        <contentViews:BonusContentView />
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </FlexLayout>
+
+            <BoxView />
+        </StackLayout>
     </ContentView.Content>
 </ContentView>
