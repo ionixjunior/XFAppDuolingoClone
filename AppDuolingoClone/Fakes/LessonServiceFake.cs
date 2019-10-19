@@ -64,6 +64,36 @@ namespace AppDuolingoClone.Fakes
                             GetNewLesson("Bônus", string.Empty, "lesson_plus", _colorBonus),
                             GetNewLesson("Bônus", string.Empty, "lesson_plus", _colorBonus)
                         }
+                    },
+
+                    new LessonGroup
+                    {
+                        Type = LessonGroupTypeEnum.Multi,
+                        Lessons = new List<Lesson>
+                        {
+                            GetNewLesson("Loja", string.Empty, "lesson_sock", _colorLevel0),
+                            GetNewLesson("Estudos", "1", "lesson_pencil", _colorLevel1),
+                            GetNewLesson("Ocupações", "2", "lesson_hat", _colorLevel2)
+                        }
+                    },
+
+                    new LessonGroup
+                    {
+                        Type = LessonGroupTypeEnum.Single,
+                        Lessons = new List<Lesson>
+                        {
+                            GetNewLesson("Encontros", "1", "lesson_bag", _colorLevel1)
+                        }
+                    },
+
+                    new LessonGroup
+                    {
+                        Type = LessonGroupTypeEnum.Multi,
+                        Lessons = new List<Lesson>
+                        {
+                            GetNewLesson("Rotinas", "1", "lesson_bike", _colorLevel1),
+                            GetNewLesson("Emoções", string.Empty, "lesson_heart", _colorLevel0)
+                        }
                     }
                 };
             });

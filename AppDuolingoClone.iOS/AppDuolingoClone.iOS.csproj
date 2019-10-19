@@ -169,5 +169,11 @@
     <BundleResource Include="Resources\lesson_airplane.png" />
     <BundleResource Include="Resources\lesson_plus.png" />
     <BundleResource Include="Resources\crown_gray_stroke.png" />
+    <BundleResource Include="Resources\lesson_heart.png" />
+    <BundleResource Include="Resources\lesson_bike.png" />
+    <BundleResource Include="Resources\lesson_bag.png" />
+    <BundleResource Include="Resources\lesson_hat.png" />
+    <BundleResource Include="Resources\lesson_pencil.png" />
+    <BundleResource Include="Resources\lesson_sock.png" />
   </ItemGroup>
 </Project>
