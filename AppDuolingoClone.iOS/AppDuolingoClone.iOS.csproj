@@ -175,5 +175,6 @@
     <BundleResource Include="Resources\lesson_hat.png" />
     <BundleResource Include="Resources\lesson_pencil.png" />
     <BundleResource Include="Resources\lesson_sock.png" />
+    <BundleResource Include="Resources\lesson_divisor_castle.png" />
   </ItemGroup>
 </Project>
