@@ -18,6 +18,7 @@
                 HorizontalOptions="Center"
                 VerticalOptions="Center"
                 Padding="0"
+                BackgroundColor="{Binding Color}"
             >
                 <Image
                     Source="{Binding Icon}"
