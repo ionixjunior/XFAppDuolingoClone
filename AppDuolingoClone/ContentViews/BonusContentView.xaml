@@ -10,9 +10,9 @@
             Spacing="15"
         >
             <Frame
-                WidthRequest="100"
-                HeightRequest="100"
-                CornerRadius="50"
+                WidthRequest="90"
+                HeightRequest="90"
+                CornerRadius="45"
                 BorderColor="#dbdcdc"
                 HasShadow="False"
                 HorizontalOptions="Center"
