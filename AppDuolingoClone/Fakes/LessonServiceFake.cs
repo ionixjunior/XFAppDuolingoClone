@@ -88,13 +88,31 @@ namespace AppDuolingoClone.Fakes
 
                     new LessonGroup
                     {
+                        Type = LessonGroupTypeEnum.Divisor,
+                        Lessons = new List<Lesson>
+                        {
+                            GetNewLesson(string.Empty, "1", "lesson_divisor_castle", string.Empty)
+                        }
+                    }, 
+
+                    new LessonGroup
+                    {
                         Type = LessonGroupTypeEnum.Multi,
                         Lessons = new List<Lesson>
                         {
                             GetNewLesson("Rotinas", "1", "lesson_bike", _colorLevel1),
                             GetNewLesson("Emoções", string.Empty, "lesson_heart", _colorLevel0)
                         }
-                    }
+                    },
+
+                    new LessonGroup
+                    {
+                        Type = LessonGroupTypeEnum.Divisor,
+                        Lessons = new List<Lesson>
+                        {
+                            GetNewLesson(string.Empty, "2", "lesson_divisor_castle", string.Empty)
+                        }
+                    },
                 };
             });
         }

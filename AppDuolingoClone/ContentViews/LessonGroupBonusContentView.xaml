@@ -5,19 +5,11 @@
     xmlns:contentViews="clr-namespace:AppDuolingoClone.ContentViews"
     x:Class="AppDuolingoClone.ContentViews.LessonGroupBonusContentView"
 >
-    <ContentView.Resources>
-        <ResourceDictionary>
-            <Style TargetType="BoxView">
-                <Setter Property="HeightRequest" Value="1" />
-                <Setter Property="BackgroundColor" Value="#dfe0e0" />
-                <Setter Property="Margin" Value="0,15" />
-            </Style>
-        </ResourceDictionary>
-    </ContentView.Resources>
-
     <ContentView.Content>
         <StackLayout>
-            <BoxView />
+            <BoxView
+                Style="{StaticResource DivisorLine}"
+            />
 
             <FlexLayout
                 Direction="Row"
@@ -33,7 +25,9 @@
                 </BindableLayout.ItemTemplate>
             </FlexLayout>
 
-            <BoxView />
+            <BoxView
+                Style="{StaticResource DivisorLine}"
+            />
         </StackLayout>
     </ContentView.Content>
 </ContentView>

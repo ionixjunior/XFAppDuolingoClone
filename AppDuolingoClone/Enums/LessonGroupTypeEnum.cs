@@ -5,6 +5,7 @@ namespace AppDuolingoClone.Enums
     {
         Single,
         Multi,
-        Bonus
+        Bonus,
+        Divisor
     }
 }
