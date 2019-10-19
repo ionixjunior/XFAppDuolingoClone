@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:converters="clr-namespace:AppDuolingoClone.Converters"
+    x:Class="AppDuolingoClone.ContentViews.BonusContentView"
+    Margin="15,0"
+>
+    <ContentView.Content>
+        <StackLayout
+            Spacing="15"
+        >
+            <Frame
+                WidthRequest="100"
+                HeightRequest="100"
+                CornerRadius="50"
+                BorderColor="#dbdcdc"
+                HasShadow="False"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Padding="0"
+            >
+                <Image
+                    Source="{Binding Icon}"
+                    WidthRequest="60"
+                    HeightRequest="60"
+                    HorizontalOptions="Center"
+                />
+            </Frame>
+
+            <Label
+                Text="{Binding Name}"
+                TextColor="#aeaeae"
+                FontSize="25"
+                HorizontalTextAlignment="Center"
+            />
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

@@ -15,7 +15,7 @@
         >
             <BindableLayout.ItemTemplate>
                 <DataTemplate>
-                    <contentViews:LessonContentView />
+                    <contentViews:BonusContentView />
                 </DataTemplate>
             </BindableLayout.ItemTemplate>
         </FlexLayout>
