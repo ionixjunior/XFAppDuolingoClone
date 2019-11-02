@@ -23,6 +23,7 @@
                     TrackColor="#e6e6e6"
                     ProgressColor="#f7ca45"
                     Progress="{Binding Progress}"
+                    Rotation="135"
                 />
 
                 <BoxView
