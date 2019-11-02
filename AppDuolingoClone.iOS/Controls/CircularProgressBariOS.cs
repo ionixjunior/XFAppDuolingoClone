@@ -7,15 +7,15 @@ namespace AppDuolingoClone.iOS.Controls
 {
     public class CircularProgressBariOS : UIView
     {
-        private CAShapeLayer progressLyr = new CAShapeLayer();
-        private CAShapeLayer trackLyr = new CAShapeLayer();
+        private CAShapeLayer _progressLayer = new CAShapeLayer();
+        private CAShapeLayer _trackLayer = new CAShapeLayer();
 
         public CircularProgressBariOS(double width, double height)
         {
-            makeCircularPath(width, height);
+            MakeCircularPath(width, height);
         }
 
-        private void makeCircularPath(double width, double height)
+        private void MakeCircularPath(double width, double height)
         {
             BackgroundColor = UIColor.Clear;
             Layer.CornerRadius = (nfloat)(width / 2);
@@ -29,19 +29,19 @@ namespace AppDuolingoClone.iOS.Controls
                 clockWise: true
             );
 
-            trackLyr.Path = circlePath.CGPath;
-            trackLyr.FillColor = UIColor.Clear.CGColor;
-            trackLyr.StrokeColor = UIColor.Blue.CGColor;
-            trackLyr.LineWidth = (nfloat)5.0;
-            trackLyr.StrokeEnd = (nfloat)1.0;
-            Layer.AddSublayer(trackLyr);
+            _trackLayer.Path = circlePath.CGPath;
+            _trackLayer.FillColor = UIColor.Clear.CGColor;
+            _trackLayer.StrokeColor = UIColor.Blue.CGColor;
+            _trackLayer.LineWidth = (nfloat)5.0;
+            _trackLayer.StrokeEnd = (nfloat)1.0;
+            Layer.AddSublayer(_trackLayer);
 
-            progressLyr.Path = circlePath.CGPath;
-            progressLyr.FillColor = UIColor.Clear.CGColor;
-            progressLyr.StrokeColor = UIColor.Red.CGColor;
-            progressLyr.LineWidth = (nfloat)5.0;
-            progressLyr.StrokeEnd = (nfloat)0.2;
-            Layer.AddSublayer(progressLyr);
+            _progressLayer.Path = circlePath.CGPath;
+            _progressLayer.FillColor = UIColor.Clear.CGColor;
+            _progressLayer.StrokeColor = UIColor.Red.CGColor;
+            _progressLayer.LineWidth = (nfloat)5.0;
+            _progressLayer.StrokeEnd = (nfloat)0.2;
+            Layer.AddSublayer(_progressLayer);
         }
     }
 }
