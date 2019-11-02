@@ -12,14 +12,14 @@
             Spacing="15"
         >
             <Grid
-                WidthRequest="90"
-                HeightRequest="90"
+                WidthRequest="110"
+                HeightRequest="110"
                 HorizontalOptions="Center"
                 VerticalOptions="Center"
             >
                 <controls:CircularProgressBar
-                    WidthRequest="90"
-                    HeightRequest="90"
+                    WidthRequest="110"
+                    HeightRequest="110"
                 />
 
                 <BoxView
@@ -27,6 +27,8 @@
                     WidthRequest="90"
                     HeightRequest="90"
                     CornerRadius="45"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
                 />
 
                 <Image

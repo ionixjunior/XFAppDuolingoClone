@@ -68,6 +68,7 @@
     <Compile Include="Renderers\CustomTabbedPageRenderer.cs" />
     <Compile Include="Renderers\CustomContentPageRenderer.cs" />
     <Compile Include="Renderers\CircularProgressBarRenderer.cs" />
+    <Compile Include="Controls\CircularProgressBariOS.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
@@ -139,6 +140,7 @@
   <ItemGroup>
     <Folder Include="Renderers\" />
     <Folder Include="Resources\Fonts\" />
+    <Folder Include="Controls\" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\tab_lessons_selected.png" />
