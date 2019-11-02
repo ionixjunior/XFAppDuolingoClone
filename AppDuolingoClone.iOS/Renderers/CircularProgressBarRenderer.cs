@@ -22,7 +22,10 @@ namespace AppDuolingoClone.iOS.Renderers
 
                 var nativeControl = new CircularProgressBariOS(
                     Element.WidthRequest,
-                    Element.HeightRequest
+                    Element.HeightRequest,
+                    Element.TrackColor.ToCGColor(),
+                    Element.ProgressColor.ToCGColor(),
+                    Element.Progress
                 );
 
                 SetNativeControl(nativeControl);
