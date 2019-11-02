@@ -28,17 +28,17 @@
 
                 <BoxView
                     BackgroundColor="{Binding Color}"
-                    WidthRequest="90"
-                    HeightRequest="90"
-                    CornerRadius="45"
+                    WidthRequest="80"
+                    HeightRequest="80"
+                    CornerRadius="40"
                     HorizontalOptions="Center"
                     VerticalOptions="Center"
                 />
 
                 <Image
                     Source="{Binding Icon}"
-                    WidthRequest="60"
-                    HeightRequest="60"
+                    WidthRequest="50"
+                    HeightRequest="50"
                     HorizontalOptions="Center"
                 />
 
