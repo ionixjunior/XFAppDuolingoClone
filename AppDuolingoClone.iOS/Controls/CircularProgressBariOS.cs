@@ -5,6 +5,7 @@ using UIKit;
 
 namespace AppDuolingoClone.iOS.Controls
 {
+    // Implementação inspirada em https://www.tutorialspoint.com/create-circular-progress-bar-in-ios
     public class CircularProgressBariOS : UIView
     {
         private CAShapeLayer _progressLayer = new CAShapeLayer();
