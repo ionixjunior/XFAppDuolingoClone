@@ -5,15 +5,15 @@ Um clone do Duolingo feito com Xamarin.Forms.
 ## Screenshots
 
 ### Android
-<img width="250" src="art/android_lessons_1.png" />
 
-<img width="250" src="art/android_lessons_2.png" />
-
-<img width="250" src="art/android_lessons_3.png" />
+#### Tela de lições
+<kbd><img width="250" src="art/android_lessons_1.png" /></kbd>
+<kbd><img width="250" src="art/android_lessons_2.png" /></kbd>
+<kbd><img width="250" src="art/android_lessons_3.png" /></kbd>
 
 ### iOS
-<img width="250" src="art/ios_lessons_1.png" />
 
-<img width="250" src="art/ios_lessons_2.png" />
-
-<img width="250" src="art/ios_lessons_1.png" />
+#### Tela de lições
+<kbd><img width="250" src="art/ios_lessons_1.png" /></kbd>
+<kbd><img width="250" src="art/ios_lessons_2.png" /></kbd>
+<kbd><img width="250" src="art/ios_lessons_1.png" /></kbd>
