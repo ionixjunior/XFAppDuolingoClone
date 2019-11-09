@@ -72,6 +72,7 @@
     <Compile Include="Renderers\FormsFloatingActionButtonRenderer.cs" />
     <Compile Include="Renderers\CustomTabbedPageRenderer.cs" />
     <Compile Include="Utils\ResourceUtil.cs" />
+    <Compile Include="Renderers\CircularProgressBarRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
