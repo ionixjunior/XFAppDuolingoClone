@@ -10,6 +10,7 @@ using Xamarin.Forms.Platform.Android;
 [assembly: ExportRenderer(typeof(CircularProgressBar), typeof(CircularProgressBarRenderer))]
 namespace AppDuolingoClone.Droid.Renderers
 {
+    // Implementação inspirada em https://www.tutorialspoint.com/how-to-create-circular-progressbar-in-android
     public class CircularProgressBarRenderer : ViewRenderer<CircularProgressBar, Android.Widget.ProgressBar>
     {
         private const int PROGRESS_MAX_VALUE = 100;
