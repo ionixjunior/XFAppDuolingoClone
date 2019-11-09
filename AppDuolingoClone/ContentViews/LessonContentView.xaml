@@ -28,9 +28,9 @@
 
                 <BoxView
                     BackgroundColor="{Binding Color}"
-                    WidthRequest="66"
-                    HeightRequest="66"
-                    CornerRadius="42"
+                    WidthRequest="{OnPlatform Android=66, iOS=74}"
+                    HeightRequest="{OnPlatform Android=66, iOS=74}"
+                    CornerRadius="{OnPlatform Android=33, iOS=37}"
                     HorizontalOptions="Center"
                     VerticalOptions="Center"
                 />
