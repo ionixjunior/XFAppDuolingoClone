@@ -12,6 +12,8 @@ namespace AppDuolingoClone.Droid.Renderers
 {
     public class CircularProgressBarRenderer : ViewRenderer<CircularProgressBar, Android.Widget.ProgressBar>
     {
+        private const int PROGRESS_MAX_VALUE = 100;
+
         public CircularProgressBarRenderer(Context context) : base(context)
         {
         }
@@ -30,8 +32,8 @@ namespace AppDuolingoClone.Droid.Renderers
 
                 nativeControl.SetBackground(GetCircularTrack(Element.TrackColor.ToAndroid()));
                 nativeControl.ProgressDrawable = GetCircularProgress(Element.ProgressColor.ToAndroid());
-                nativeControl.Max = 100;
-                nativeControl.Progress = 20;
+                nativeControl.Max = PROGRESS_MAX_VALUE;
+                nativeControl.Progress = GetProgress(Element.Progress);
 
                 SetNativeControl(nativeControl);
             }
@@ -52,6 +54,13 @@ namespace AppDuolingoClone.Droid.Renderers
             drawable.SetColor(ColorStateList.ValueOf(color));
 
             return rotageDrawable;
+        }
+
+        private int GetProgress(double progress)
+        {
+            return Convert.ToInt32(
+                Math.Floor(progress * PROGRESS_MAX_VALUE)
+            );
         }
     }
 }
