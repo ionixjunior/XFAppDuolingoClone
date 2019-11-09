@@ -12,14 +12,14 @@
             Spacing="15"
         >
             <Grid
-                WidthRequest="110"
-                HeightRequest="110"
+                WidthRequest="100"
+                HeightRequest="100"
                 HorizontalOptions="Center"
                 VerticalOptions="Center"
             >
                 <controls:CircularProgressBar
-                    WidthRequest="110"
-                    HeightRequest="110"
+                    WidthRequest="100"
+                    HeightRequest="100"
                     TrackColor="#e6e6e6"
                     ProgressColor="#f7ca45"
                     Progress="{Binding Progress}"
@@ -28,17 +28,17 @@
 
                 <BoxView
                     BackgroundColor="{Binding Color}"
-                    WidthRequest="80"
-                    HeightRequest="80"
-                    CornerRadius="40"
+                    WidthRequest="66"
+                    HeightRequest="66"
+                    CornerRadius="42"
                     HorizontalOptions="Center"
                     VerticalOptions="Center"
                 />
 
                 <Image
                     Source="{Binding Icon}"
-                    WidthRequest="50"
-                    HeightRequest="50"
+                    WidthRequest="40"
+                    HeightRequest="40"
                     HorizontalOptions="Center"
                 />
 
