@@ -181,5 +181,9 @@
     <BundleResource Include="Resources\lesson_divisor_castle.png" />
     <BundleResource Include="Resources\tab_stories_selected.png" />
     <BundleResource Include="Resources\tab_stories.png" />
+    <BundleResource Include="Resources\stories_bread.png" />
+    <BundleResource Include="Resources\stories_candle.png" />
+    <BundleResource Include="Resources\stories_coffe.png" />
+    <BundleResource Include="Resources\stories_gift.png" />
   </ItemGroup>
 </Project>
