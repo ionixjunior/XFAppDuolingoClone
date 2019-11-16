@@ -5,6 +5,67 @@
     x:Class="AppDuolingoClone.Views.StoriesView"
 >
     <ContentPage.Content>
-        <Label Text="Stories view" />
+        <CollectionView
+            ItemsSource="{Binding Stories}"
+        >
+            <CollectionView.Header>
+                <Grid
+                    HeightRequest="200"
+                    Margin="0"
+                    RowSpacing="10"
+                >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+
+                    <Label
+                        Grid.Row="0"
+                        Text="Duolingo Histórias"
+                        HorizontalTextAlignment="Center"
+                        VerticalTextAlignment="End"
+                        HeightRequest="100"
+                        FontSize="30"
+                        Margin="50,0"
+                    />
+
+                    <Label
+                        Grid.Row="1"
+                        Text="Melhore sua leitura e escuta com histórias curtas!"
+                        FontFamily="{StaticResource FontRegular}"
+                        TextColor="{StaticResource SubTitleColor}"
+                        HorizontalTextAlignment="Center"
+                        VerticalTextAlignment="Start"
+                        HeightRequest="100"
+                        FontSize="18"
+                        Margin="50,0"
+                    />
+                </Grid>
+                
+            </CollectionView.Header>
+
+            <CollectionView.ItemsLayout>
+                <GridItemsLayout
+                    Orientation="Vertical"
+                    Span="2"
+                />
+            </CollectionView.ItemsLayout>
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout>
+                        <Frame></Frame>
+                        <Label
+                            Text="{Binding Name}"
+                            FontSize="30"
+                        />
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
     </ContentPage.Content>
 </ContentPage>

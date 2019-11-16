@@ -17,6 +17,15 @@
                 iOS="DINNextRoundedLTPro-Bold" 
             />
 
+            <OnPlatform 
+                x:Key="FontRegular" 
+                x:TypeArguments="x:String" 
+                Android="Fonts/DINNextRoundedLTPro-Regular.ttf#DINNextRounded" 
+                iOS="DINNextRoundedLTPro-Regular" 
+            />
+
+            <Color x:Key="SubTitleColor">#828282</Color>
+
             <Style TargetType="Label">
                 <Setter Property="FontFamily" Value="{StaticResource FontBold}" />
             </Style>
