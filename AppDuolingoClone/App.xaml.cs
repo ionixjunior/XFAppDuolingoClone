@@ -29,6 +29,7 @@ namespace AppDuolingoClone
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage>();
             containerRegistry.RegisterForNavigation<LessonsView, LessonsViewModel>();
+            containerRegistry.RegisterForNavigation<StoriesView, StoriesViewModel>();
             containerRegistry.RegisterForNavigation<TrainingView, TrainingViewModel>();
             containerRegistry.RegisterForNavigation<ProfileView, ProfileViewModel>();
             containerRegistry.RegisterForNavigation<RankingView, RankingViewModel>();
