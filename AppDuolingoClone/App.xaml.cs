@@ -36,6 +36,7 @@ namespace AppDuolingoClone
             containerRegistry.RegisterForNavigation<StoreView, StoreViewModel>();
 
             containerRegistry.Register<ILessonService, LessonServiceFake>();
+            containerRegistry.Register<IStoriesService, StoriesServiceFake>();
         }
 
         protected override void OnStart()
