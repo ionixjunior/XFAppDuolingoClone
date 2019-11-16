@@ -8,16 +8,22 @@ namespace AppDuolingoClone.Fakes
 {
     public class StoriesServiceFake : IStoriesService
     {
-        public async Task<IList<Stories>> GetStories()
+        public async Task<IList<StoriesGroup>> GetStories()
         {
             return await Task.Run(() =>
             {
-                return new List<Stories>()
+                return new List<StoriesGroup>
                 {
-                    GetNewStories("Bom dia!", "stories_coffe"),
-                    GetNewStories("Um encontro", "stories_candle"),
-                    GetNewStories("Uma coisa", "stories_bread"),
-                    GetNewStories("Surpresa", "stories_gift")
+                    new StoriesGroup(
+                        "Série 1",
+                        new List<Stories>()
+                        {
+                            GetNewStories("Bom dia!", "stories_coffe"),
+                            GetNewStories("Um encontro", "stories_candle"),
+                            GetNewStories("Uma coisa", "stories_bread"),
+                            GetNewStories("Surpresa", "stories_gift")
+                        }
+                    )
                 };
             });
         }

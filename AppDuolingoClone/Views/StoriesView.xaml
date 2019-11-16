@@ -7,7 +7,50 @@
     <ContentPage.Content>
         <CollectionView
             ItemsSource="{Binding Stories}"
+            IsGrouped="True"
+            ItemSizingStrategy="{OnPlatform Android=MeasureAllItems, iOS=MeasureFirstItem}"
         >
+            <CollectionView.GroupHeaderTemplate>
+                <DataTemplate>
+                    <Grid
+                        ColumnSpacing="0"
+                        Margin="0,30"
+                    >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="120" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <BoxView
+                            Grid.Column="0"
+                            Style="{StaticResource DivisorLine}"
+                            VerticalOptions="Center"
+                        />
+
+                        <Label
+                            Grid.Column="1"
+                            Text="{Binding Name}"
+                            HorizontalTextAlignment="Center"
+                            VerticalTextAlignment="Center"
+                            FontSize="26"
+                        />
+            
+                        <BoxView
+                            Grid.Column="2"
+                            Style="{StaticResource DivisorLine}"
+                            VerticalOptions="Center"
+                        />
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.GroupHeaderTemplate>
+
+            <CollectionView.GroupFooterTemplate>
+                <DataTemplate>
+                    <Label Text="" />
+                </DataTemplate>
+            </CollectionView.GroupFooterTemplate>
+            
             <CollectionView.Header>
                 <Grid
                     HeightRequest="200"

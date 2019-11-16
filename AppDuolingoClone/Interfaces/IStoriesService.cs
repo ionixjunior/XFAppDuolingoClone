@@ -7,6 +7,6 @@ namespace AppDuolingoClone.Interfaces
 {
     public interface IStoriesService
     {
-        Task<IList<Stories>> GetStories();
+        Task<IList<StoriesGroup>> GetStories();
     }
 }
