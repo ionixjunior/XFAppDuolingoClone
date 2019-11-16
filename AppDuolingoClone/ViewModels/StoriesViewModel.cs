@@ -1,5 +1,10 @@
 ﻿using System;
+using System.Linq;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Threading.Tasks;
 using AppDuolingoClone.Interfaces;
+using AppDuolingoClone.Models;
 using Prism;
 
 namespace AppDuolingoClone.ViewModels
@@ -7,6 +12,8 @@ namespace AppDuolingoClone.ViewModels
     public class StoriesViewModel : ViewModelBase, IActiveAware
     {
         private readonly IStoriesService _storiesService;
+
+        public ObservableCollection<Stories> Stories { get; private set; }
 
         private bool _isActive;
         public bool IsActive
@@ -20,14 +27,26 @@ namespace AppDuolingoClone.ViewModels
         public StoriesViewModel(IStoriesService storiesService)
         {
             _storiesService = storiesService;
+            Stories = new ObservableCollection<Stories>();
         }
 
-        private void RaiseIsActivatedChanged()
+        private async void RaiseIsActivatedChanged()
         {
             if (IsActive)
             {
-                System.Diagnostics.Debug.WriteLine("Evento da aba");
+                var stories = await GetStories();
+
+                if (Stories.Any())
+                    Stories.Clear();
+
+                foreach (var story in stories)
+                    Stories.Add(story);
             }
+        }
+
+        private async Task<IList<Stories>> GetStories()
+        {
+            return await _storiesService.GetStories();
         }
     }
 }
