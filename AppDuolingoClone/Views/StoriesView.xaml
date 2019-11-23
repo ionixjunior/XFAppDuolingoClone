@@ -107,15 +107,14 @@
                         <Grid>
                             <Frame
                                 HasShadow="false"
-                                BackgroundColor="Black"
+                                BackgroundColor="{Binding ShadowBottomColor}"
                                 WidthRequest="163"
                                 HeightRequest="163"
                                 Padding="0"
                                 HorizontalOptions="Center"
                                 VerticalOptions="End"
                                 CornerRadius="25"
-                            >
-                            </Frame>
+                            />
 
                             <ImageButton
                                 Source="{Binding Image}"
