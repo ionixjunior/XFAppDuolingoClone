@@ -101,25 +101,30 @@
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <StackLayout
-                        WidthRequest="240"
-                        HeightRequest="240"
+                        WidthRequest="200"
+                        HeightRequest="200"
                     >
-                        <Grid>
-                            <Frame
-                                HasShadow="false"
+                        <Grid
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="FillAndExpand"
+                        >
+                            <BoxView
                                 BackgroundColor="{Binding ShadowBottomColor}"
-                                WidthRequest="163"
-                                HeightRequest="163"
-                                Padding="0"
+                                WidthRequest="118"
+                                HeightRequest="118"
                                 HorizontalOptions="Center"
                                 VerticalOptions="End"
-                                CornerRadius="25"
+                                CornerRadius="18"
+                                TranslationY="-5"
                             />
 
                             <ImageButton
                                 Source="{Binding Image}"
-                                WidthRequest="180"
-                                HeightRequest="180"
+                                WidthRequest="140"
+                                HeightRequest="140"
+                                BackgroundColor="Transparent"
+                                HorizontalOptions="Center"
+                                VerticalOptions="End"
                             />
                         </Grid>
 
