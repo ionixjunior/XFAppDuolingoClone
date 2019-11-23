@@ -104,11 +104,26 @@
                         WidthRequest="240"
                         HeightRequest="240"
                     >
-                        <Image
-                            Source="{Binding Image}"
-                            WidthRequest="180"
-                            HeightRequest="180"
-                        />
+                        <Grid>
+                            <Frame
+                                HasShadow="false"
+                                BackgroundColor="Black"
+                                WidthRequest="163"
+                                HeightRequest="163"
+                                Padding="0"
+                                HorizontalOptions="Center"
+                                VerticalOptions="End"
+                                CornerRadius="25"
+                            >
+                            </Frame>
+
+                            <ImageButton
+                                Source="{Binding Image}"
+                                WidthRequest="180"
+                                HeightRequest="180"
+                                TranslationY="-8"
+                            />
+                        </Grid>
 
                         <Label
                             Text="{Binding Name}"
