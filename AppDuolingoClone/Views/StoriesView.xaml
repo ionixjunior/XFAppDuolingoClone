@@ -121,8 +121,23 @@
                                 Source="{Binding Image}"
                                 WidthRequest="180"
                                 HeightRequest="180"
-                                TranslationY="-8"
-                            />
+                            >
+                                <VisualStateManager.VisualStateGroups>
+                                    <VisualStateGroup x:Name="CommonState">
+                                        <VisualState x:Name="Normal">
+                                            <VisualState.Setters>
+                                                <Setter Property="TranslationY" Value="-8" />
+                                            </VisualState.Setters>
+                                        </VisualState>
+
+                                        <VisualState x:Name="Pressed">
+                                            <VisualState.Setters>
+                                                <Setter Property="TranslationY" Value="0" />
+                                            </VisualState.Setters>
+                                        </VisualState>
+                                    </VisualStateGroup>
+                                </VisualStateManager.VisualStateGroups>
+                            </ImageButton>
                         </Grid>
 
                         <Label
