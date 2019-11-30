@@ -5,6 +5,29 @@
     x:Class="AppDuolingoClone.Views.ProfileView"
 >
     <ContentPage.Content>
-        <Label Text="Profile view" />
+        <Grid
+            RowSpacing="0"
+        >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200" />
+                <RowDefinition Height="70" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <BoxView
+                Grid.Row="0"
+                BackgroundColor="Red"
+            />
+
+            <BoxView
+                Grid.Row="1"
+                BackgroundColor="Green"
+            />
+
+            <BoxView
+                Grid.Row="2"
+                BackgroundColor="Blue"
+            />
+        </Grid>
     </ContentPage.Content>
 </ContentPage>
