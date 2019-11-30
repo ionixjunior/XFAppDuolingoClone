@@ -9,15 +9,40 @@
             RowSpacing="0"
         >
             <Grid.RowDefinitions>
-                <RowDefinition Height="200" />
+                <RowDefinition Height="225" />
                 <RowDefinition Height="70" />
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
 
-            <BoxView
+            <StackLayout
                 Grid.Row="0"
-                BackgroundColor="Red"
-            />
+                VerticalOptions="Center"
+                Spacing="25"
+            >
+                <Frame
+                    BackgroundColor="Brown"
+                    Padding="0"
+                    WidthRequest="120"
+                    HeightRequest="120"
+                    CornerRadius="60"
+                    IsClippedToBounds="True"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    HasShadow="False"
+                >
+                    <Image
+                        Source="profile_user.jpeg"
+                        BackgroundColor="Yellow"
+                    />
+
+                </Frame>
+
+                <Label
+                    Text="ionixjunior"
+                    FontSize="25"
+                    HorizontalTextAlignment="Center"
+                />
+            </StackLayout>
 
             <BoxView
                 Grid.Row="1"
