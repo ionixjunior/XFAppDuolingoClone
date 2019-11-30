@@ -4,6 +4,56 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="AppDuolingoClone.Views.ProfileView"
 >
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="SectionLabel" TargetType="Label">
+                <Setter Property="FontSize" Value="Large" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+                <Setter Property="VerticalOptions" Value="Center" />
+
+                <Setter Property="VisualStateManager.VisualStateGroups">
+                    <VisualStateGroupList>
+                        <VisualStateGroup>
+                            <VisualState x:Name="Selected">
+                                <VisualState.Setters>
+                                    <Setter Property="TextColor" Value="#4fadef" />
+                                </VisualState.Setters>
+                            </VisualState>
+
+                            <VisualState x:Name="UnSelected">
+                                <VisualState.Setters>
+                                    <Setter Property="TextColor" Value="#afafae" />
+                                </VisualState.Setters>
+                            </VisualState>
+                        </VisualStateGroup>
+                    </VisualStateGroupList>
+                </Setter>
+            </Style>
+
+            <Style x:Key="SectionBoxView" TargetType="BoxView">
+                <Setter Property="HeightRequest" Value="10" />
+
+                <Setter Property="VisualStateManager.VisualStateGroups">
+                    <VisualStateGroupList>
+                        <VisualStateGroup>
+                            <VisualState x:Name="Selected">
+                                <VisualState.Setters>
+                                    <Setter Property="BackgroundColor" Value="#4fadef" />
+                                </VisualState.Setters>
+                            </VisualState>
+
+                            <VisualState x:Name="UnSelected">
+                                <VisualState.Setters>
+                                    <Setter Property="BackgroundColor" Value="#afafae" />
+                                </VisualState.Setters>
+                            </VisualState>
+                        </VisualStateGroup>
+                    </VisualStateGroupList>
+                </Setter>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
     <ContentPage.Content>
         <Grid
             RowSpacing="0"
@@ -45,10 +95,12 @@
             </StackLayout>
 
             <FlexLayout
+                x:Name="flexLayoutSection"
                 Grid.Row="1"
                 AlignItems="Stretch"
             >
                 <Grid
+                    AutomationId="gridAchievements"
                     FlexLayout.Grow="1"
                     RowSpacing="0"
                 >
@@ -57,23 +109,26 @@
                         <RowDefinition Height="5" />
                     </Grid.RowDefinitions>
 
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="OnTappedSection"
+                        />
+                    </Grid.GestureRecognizers>
+
                     <Label
                         Grid.Row="0"
+                        Style="{StaticResource SectionLabel}"
                         Text="CONQUISTAS"
-                        TextColor="#4fadef"
-                        FontSize="Large"
-                        HorizontalTextAlignment="Center"
-                        VerticalOptions="Center"
                     />
 
                     <BoxView
                         Grid.Row="1"
-                        BackgroundColor="#4fadef"
-                        HeightRequest="10"
+                        Style="{StaticResource SectionBoxView}"
                     />
                 </Grid>
                 
                 <Grid
+                    AutomationId="gridFriends"
                     FlexLayout.Grow="1"
                     RowSpacing="0"
                 >
@@ -82,19 +137,21 @@
                         <RowDefinition Height="5" />
                     </Grid.RowDefinitions>
 
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="OnTappedSection"
+                        />
+                    </Grid.GestureRecognizers>
+
                     <Label
                         Grid.Row="0"
+                        Style="{StaticResource SectionLabel}"
                         Text="AMIGOS"
-                        TextColor="#afafae"
-                        FontSize="Large"
-                        HorizontalTextAlignment="Center"
-                        VerticalOptions="Center"
                     />
 
                     <BoxView
                         Grid.Row="1"
-                        BackgroundColor="#afafae"
-                        HeightRequest="10"
+                        Style="{StaticResource SectionBoxView}"
                     />
                 </Grid>
             </FlexLayout>
