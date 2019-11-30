@@ -156,7 +156,8 @@
                 </Grid>
             </FlexLayout>
 
-            <BoxView
+            <ContentView
+                x:Name="sectionContentView"
                 Grid.Row="2"
                 BackgroundColor="Violet"
             />
