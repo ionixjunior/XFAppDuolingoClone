@@ -187,5 +187,10 @@
     <BundleResource Include="Resources\stories_coffe.png" />
     <BundleResource Include="Resources\stories_gift.png" />
     <BundleResource Include="Resources\profile_user.jpeg" />
+    <BundleResource Include="Resources\profile_achievements_05.png" />
+    <BundleResource Include="Resources\profile_achievements_04.png" />
+    <BundleResource Include="Resources\profile_achievements_03.png" />
+    <BundleResource Include="Resources\profile_achievements_01.png" />
+    <BundleResource Include="Resources\profile_achievements_02.png" />
   </ItemGroup>
 </Project>
