@@ -1,9 +1,11 @@
 ﻿using System;
+using AppDuolingoClone.Interfaces;
+
 namespace AppDuolingoClone.ViewModels
 {
     public class ProfileViewModel : ViewModelBase
     {
-        public ProfileViewModel()
+        public ProfileViewModel(IAchievementsService achievementsService)
         {
         }
     }
