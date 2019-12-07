@@ -5,6 +5,70 @@
     x:Class="AppDuolingoClone.ContentViews.ProfileAchievementsContentView"
 >
     <ContentView.Content>
-        <Label Text="Conquistas view" FontSize="40" />
+        <CollectionView
+            ItemsSource="{Binding Achievements}"
+        >
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <FlexLayout
+                        Padding="20"
+                    >
+                        <Grid
+                            WidthRequest="200"
+                            HeightRequest="100"
+                        >
+                            <Image
+                                Source="{Binding Icon}"
+                                WidthRequest="200"
+                            />
+
+                            <Label
+                                Text="{Binding Level}"
+                                TextColor="White"
+                                FontSize="20"
+                                HorizontalTextAlignment="Center"
+                                VerticalTextAlignment="End"
+                                TranslationY="-10"
+                            />
+                        </Grid>
+
+                        <StackLayout
+                            Spacing="0"
+                            Margin="20,0,0,0"
+                        >
+                            <Label
+                                Text="{Binding Name}"
+                                FontSize="26"
+                            />
+
+                            <Label
+                                Text="{Binding Description}"
+                                FontFamily="{StaticResource FontRegular}"
+                                TextColor="#777777"
+                                FontSize="22"
+                            />
+
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+
+                                <ProgressBar
+                                    Grid.Column="0"
+                                    VerticalOptions="Center"
+                                />
+
+                                <Label
+                                    Grid.Column="1"
+                                    Text="{Binding Status}"
+                                    TextColor="#afafae"
+                                />
+                            </Grid>
+                        </StackLayout>
+                    </FlexLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
     </ContentView.Content>
 </ContentView>
