@@ -16,7 +16,7 @@
                     >
                         <Grid
                             WidthRequest="200"
-                            HeightRequest="100"
+                            HeightRequest="130"
                         >
                             <Image
                                 Source="{Binding Icon}"
@@ -29,7 +29,7 @@
                                 FontSize="20"
                                 HorizontalTextAlignment="Center"
                                 VerticalTextAlignment="End"
-                                TranslationY="-10"
+                                TranslationY="-20"
                             />
                         </Grid>
 
