@@ -57,6 +57,7 @@
                                 <ProgressBar
                                     Grid.Column="0"
                                     VerticalOptions="Center"
+                                    Progress="{Binding Progress}"
                                 />
 
                                 <Label

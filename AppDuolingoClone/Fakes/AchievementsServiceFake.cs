@@ -18,7 +18,7 @@ namespace AppDuolingoClone.Fakes
                         "NÍVEL 9",
                         "Majestade",
                         "Ganhe 80 coroas",
-                        98.75,
+                        0.9875,
                         "79/80"
                     ),
                     GetAchievement(
@@ -26,7 +26,7 @@ namespace AppDuolingoClone.Fakes
                         "NÍVEL 8",
                         "Intelectual",
                         "Aprenda 1.000 novas palavras em um curso",
-                        86.3,
+                        0.863,
                         "863/1K"
                     ),
                     GetAchievement(
@@ -34,7 +34,7 @@ namespace AppDuolingoClone.Fakes
                         "NÍVEL 5",
                         "Na Mosca",
                         "Complete 100 lições sem errar nada",
-                        81,
+                        0.81,
                         "81/100"
                     ),
                     GetAchievement(
@@ -42,7 +42,7 @@ namespace AppDuolingoClone.Fakes
                         "NÍVEL 7",
                         "Sabe-tudo",
                         "Ganhe 7500 XP",
-                        72,
+                        0.72,
                         "5,4K/7,5K"
                     ),
                     GetAchievement(
@@ -50,7 +50,7 @@ namespace AppDuolingoClone.Fakes
                         "NÍVEL 3",
                         "Fogueira",
                         "Alcance uma ofensiva de 14 dias",
-                        50,
+                        0.5,
                         "7/14"
                     ),
                     GetAchievement(
@@ -58,7 +58,7 @@ namespace AppDuolingoClone.Fakes
                         "NÍVEL 1",
                         "Estrategista",
                         "Você leu uma dica",
-                        100,
+                        1,
                         string.Empty
                     )
                 };
