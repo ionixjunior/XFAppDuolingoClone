@@ -12,6 +12,7 @@ namespace AppDuolingoClone.Views
         private View _title;
         private Lazy<ProfileAchievementsContentView> _sectionAchievements = new Lazy<ProfileAchievementsContentView>();
         private Lazy<ProfileFriendsContentView> _sectionFriends = new Lazy<ProfileFriendsContentView>();
+        private bool _isFirstAppear = true;
 
         public ProfileView()
         {
@@ -22,6 +23,14 @@ namespace AppDuolingoClone.Views
         {
             base.OnAppearing();
 
+            if (_isFirstAppear)
+                SelectFirstSection();
+
+            _isFirstAppear = false;
+        }
+
+        private void SelectFirstSection()
+        {
             var index = 0;
             foreach (var view in flexLayoutSection.Children)
             {
