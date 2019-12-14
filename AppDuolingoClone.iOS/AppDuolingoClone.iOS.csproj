@@ -70,6 +70,8 @@
     <Compile Include="Renderers\CircularProgressBarRenderer.cs" />
     <Compile Include="Controls\CircularProgressBariOS.cs" />
     <Compile Include="Renderers\CustomImageButtonRenderer.cs" />
+    <Compile Include="Controls\HorizontalProgressBariOS.cs" />
+    <Compile Include="Renderers\HorizontalProgressBarRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />

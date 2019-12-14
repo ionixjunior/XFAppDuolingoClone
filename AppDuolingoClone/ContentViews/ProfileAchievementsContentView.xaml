@@ -2,6 +2,7 @@
 <ContentView
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:AppDuolingoClone.Controls"
     x:Class="AppDuolingoClone.ContentViews.ProfileAchievementsContentView"
 >
     <ContentView.Content>
@@ -54,10 +55,13 @@
                                     <ColumnDefinition Width="Auto" />
                                 </Grid.ColumnDefinitions>
 
-                                <ProgressBar
+                                <controls:HorizontalProgressBar
                                     Grid.Column="0"
                                     VerticalOptions="Center"
-                                    Progress="{Binding Progress}"
+                                    HeightRequest="30"
+                                    TrackColor="{StaticResource TrackColor}"
+                                    ProgressColor="{StaticResource ProgressColor}"
+                                    Progress="0.5"
                                 />
 
                                 <Label

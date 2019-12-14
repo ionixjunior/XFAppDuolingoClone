@@ -20,8 +20,8 @@
                 <controls:CircularProgressBar
                     WidthRequest="100"
                     HeightRequest="100"
-                    TrackColor="#e6e6e6"
-                    ProgressColor="#f7ca45"
+                    TrackColor="{StaticResource TrackColor}"
+                    ProgressColor="{StaticResource ProgressColor}"
                     Progress="{Binding Progress}"
                     Rotation="135"
                 />

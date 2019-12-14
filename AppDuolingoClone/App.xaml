@@ -25,6 +25,8 @@
             />
 
             <Color x:Key="SubTitleColor">#828282</Color>
+            <Color x:Key="TrackColor">#e6e6e6</Color>
+            <Color x:Key="ProgressColor">#f7ca45</Color>
 
             <Style TargetType="Label">
                 <Setter Property="FontFamily" Value="{StaticResource FontBold}" />
