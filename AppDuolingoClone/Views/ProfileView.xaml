@@ -59,7 +59,7 @@
             RowSpacing="0"
         >
             <Grid.RowDefinitions>
-                <RowDefinition Height="225" />
+                <RowDefinition Height="180" />
                 <RowDefinition Height="70" />
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
@@ -72,9 +72,9 @@
                 <Frame
                     BackgroundColor="Brown"
                     Padding="0"
-                    WidthRequest="120"
-                    HeightRequest="120"
-                    CornerRadius="60"
+                    WidthRequest="100"
+                    HeightRequest="100"
+                    CornerRadius="50"
                     IsClippedToBounds="True"
                     HorizontalOptions="Center"
                     VerticalOptions="Center"
