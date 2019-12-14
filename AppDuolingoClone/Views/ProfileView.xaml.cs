@@ -30,7 +30,8 @@ namespace AppDuolingoClone.Views
                     if (index++ == 0)
                     {
                         GoToStateSelected(grid);
-                        sectionContentView.Content = _sectionAchievements.Value;
+                        sectionAchievements.IsVisible = true;
+                        sectionAchievements.Content = _sectionAchievements.Value;
                         continue;
                     }
 
@@ -66,13 +67,17 @@ namespace AppDuolingoClone.Views
 
                 if (grid.AutomationId == "gridAchievements")
                 {
-                    sectionContentView.Content = _sectionAchievements.Value;
+                    sectionFriends.IsVisible = false;
+                    sectionAchievements.IsVisible = true;
+                    sectionAchievements.Content = _sectionAchievements.Value;
                     return;
                 }
 
                 if (grid.AutomationId == "gridFriends")
                 {
-                    sectionContentView.Content = _sectionFriends.Value;
+                    sectionAchievements.IsVisible = false;
+                    sectionFriends.IsVisible = true;
+                    sectionFriends.Content = _sectionFriends.Value;
                     return;
                 }
             }
