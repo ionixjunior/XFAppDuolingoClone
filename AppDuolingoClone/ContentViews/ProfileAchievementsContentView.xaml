@@ -33,19 +33,19 @@
                                     <Label
                                         FontSize="26"
                                         Text="{Binding Name}"
-                                        VerticalOptions="FillAndExpand" />
+                                        VerticalOptions="CenterAndExpand" />
 
                                     <Label
                                         FontFamily="{StaticResource FontRegular}"
                                         FontSize="22"
                                         Text="{Binding Description}"
                                         TextColor="#777777"
-                                        VerticalOptions="FillAndExpand" />
+                                        VerticalOptions="CenterAndExpand" />
 
                                     <Grid
                                         ColumnSpacing="20"
                                         IsVisible="{Binding IsActive}"
-                                        VerticalOptions="FillAndExpand">
+                                        VerticalOptions="CenterAndExpand">
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition Width="*" />
                                             <ColumnDefinition Width="Auto" />
