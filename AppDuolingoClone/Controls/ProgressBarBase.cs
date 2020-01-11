@@ -9,7 +9,7 @@ namespace AppDuolingoClone.Controls
             BindableProperty.Create(
                 nameof(TrackColor),
                 typeof(Color),
-                typeof(CircularProgressBar),
+                typeof(ProgressBarBase),
                 Color.Transparent
             );
 
@@ -23,7 +23,7 @@ namespace AppDuolingoClone.Controls
             BindableProperty.Create(
                 nameof(ProgressColor),
                 typeof(Color),
-                typeof(CircularProgressBar),
+                typeof(ProgressBarBase),
                 Color.Transparent
             );
 
@@ -37,7 +37,7 @@ namespace AppDuolingoClone.Controls
             BindableProperty.Create(
                 nameof(Progress),
                 typeof(double),
-                typeof(CircularProgressBar),
+                typeof(ProgressBarBase),
                 0.0
             );
 
