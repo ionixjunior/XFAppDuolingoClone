@@ -1,18 +1,16 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8" ?>
 <ContentView
+    x:Class="AppDuolingoClone.ContentViews.LessonGroupMultiContentView"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:contentViews="clr-namespace:AppDuolingoClone.ContentViews"
-    x:Class="AppDuolingoClone.ContentViews.LessonGroupMultiContentView"
->
+    xmlns:contentViews="clr-namespace:AppDuolingoClone.ContentViews">
     <ContentView.Content>
         <FlexLayout
+            AlignItems="Center"
+            BindableLayout.ItemsSource="{Binding Lessons}"
             Direction="Row"
             HeightRequest="180"
-            BindableLayout.ItemsSource="{Binding Lessons}"
-            AlignItems="Center"
-            JustifyContent="Center"
-        >
+            JustifyContent="Center">
             <BindableLayout.ItemTemplate>
                 <DataTemplate>
                     <contentViews:LessonContentView />

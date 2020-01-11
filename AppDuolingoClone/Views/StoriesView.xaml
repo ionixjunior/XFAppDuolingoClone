@@ -1,21 +1,17 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8" ?>
 <ContentPage
-    xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="AppDuolingoClone.Views.StoriesView"
->
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
     <ContentPage.Content>
         <CollectionView
-            ItemsSource="{Binding Stories}"
             IsGrouped="True"
-            ItemSizingStrategy="{OnPlatform Android=MeasureAllItems, iOS=MeasureFirstItem}"
-        >
+            ItemSizingStrategy="{OnPlatform Android=MeasureAllItems,
+                                            iOS=MeasureFirstItem}"
+            ItemsSource="{Binding Stories}">
             <CollectionView.GroupHeaderTemplate>
                 <DataTemplate>
-                    <Grid
-                        ColumnSpacing="0"
-                        Margin="0,30"
-                    >
+                    <Grid Margin="0,30" ColumnSpacing="0">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*" />
                             <ColumnDefinition Width="120" />
@@ -25,22 +21,19 @@
                         <BoxView
                             Grid.Column="0"
                             Style="{StaticResource DivisorLine}"
-                            VerticalOptions="Center"
-                        />
+                            VerticalOptions="Center" />
 
                         <Label
                             Grid.Column="1"
-                            Text="{Binding Name}"
-                            HorizontalTextAlignment="Center"
-                            VerticalTextAlignment="Center"
                             FontSize="26"
-                        />
-            
+                            HorizontalTextAlignment="Center"
+                            Text="{Binding Name}"
+                            VerticalTextAlignment="Center" />
+
                         <BoxView
                             Grid.Column="2"
                             Style="{StaticResource DivisorLine}"
-                            VerticalOptions="Center"
-                        />
+                            VerticalOptions="Center" />
                     </Grid>
                 </DataTemplate>
             </CollectionView.GroupHeaderTemplate>
@@ -50,13 +43,12 @@
                     <Label Text="" />
                 </DataTemplate>
             </CollectionView.GroupFooterTemplate>
-            
+
             <CollectionView.Header>
                 <Grid
-                    HeightRequest="200"
                     Margin="0"
-                    RowSpacing="10"
-                >
+                    HeightRequest="200"
+                    RowSpacing="10">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*" />
                     </Grid.ColumnDefinitions>
@@ -68,71 +60,57 @@
 
                     <Label
                         Grid.Row="0"
-                        Text="Duolingo Histórias"
-                        HorizontalTextAlignment="Center"
-                        VerticalTextAlignment="End"
-                        HeightRequest="100"
-                        FontSize="30"
                         Margin="50,0"
-                    />
+                        FontSize="30"
+                        HeightRequest="100"
+                        HorizontalTextAlignment="Center"
+                        Text="Duolingo Histórias"
+                        VerticalTextAlignment="End" />
 
                     <Label
                         Grid.Row="1"
-                        Text="Melhore sua leitura e escuta com histórias curtas!"
-                        FontFamily="{StaticResource FontRegular}"
-                        TextColor="{StaticResource SubTitleColor}"
-                        HorizontalTextAlignment="Center"
-                        VerticalTextAlignment="Start"
-                        HeightRequest="100"
-                        FontSize="18"
                         Margin="50,0"
-                    />
+                        FontFamily="{StaticResource FontRegular}"
+                        FontSize="18"
+                        HeightRequest="100"
+                        HorizontalTextAlignment="Center"
+                        Text="Melhore sua leitura e escuta com histórias curtas!"
+                        TextColor="{StaticResource SubTitleColor}"
+                        VerticalTextAlignment="Start" />
                 </Grid>
-                
+
             </CollectionView.Header>
 
             <CollectionView.ItemsLayout>
-                <GridItemsLayout
-                    Orientation="Vertical"
-                    Span="2"
-                />
+                <GridItemsLayout Orientation="Vertical" Span="2" />
             </CollectionView.ItemsLayout>
 
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <StackLayout
-                        WidthRequest="200"
-                        HeightRequest="200"
-                    >
-                        <Grid
-                            HorizontalOptions="FillAndExpand"
-                            VerticalOptions="FillAndExpand"
-                        >
+                    <StackLayout HeightRequest="200" WidthRequest="200">
+                        <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
                             <BoxView
                                 BackgroundColor="{Binding ShadowBottomColor}"
-                                WidthRequest="118"
+                                CornerRadius="18"
                                 HeightRequest="118"
                                 HorizontalOptions="Center"
-                                VerticalOptions="End"
-                                CornerRadius="18"
                                 TranslationY="-5"
-                            />
+                                VerticalOptions="End"
+                                WidthRequest="118" />
 
                             <ImageButton
-                                Source="{Binding Image}"
-                                WidthRequest="140"
-                                HeightRequest="140"
                                 BackgroundColor="Transparent"
+                                HeightRequest="140"
                                 HorizontalOptions="Center"
+                                Source="{Binding Image}"
                                 VerticalOptions="End"
-                            />
+                                WidthRequest="140" />
                         </Grid>
 
                         <Label
-                            Text="{Binding Name}"
                             FontSize="24"
                             HorizontalTextAlignment="Center"
-                        />
+                            Text="{Binding Name}" />
                     </StackLayout>
                 </DataTemplate>
             </CollectionView.ItemTemplate>

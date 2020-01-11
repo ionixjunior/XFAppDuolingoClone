@@ -1,23 +1,19 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8" ?>
 <ContentView
+    x:Class="AppDuolingoClone.ContentViews.LessonGroupBonusContentView"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:contentViews="clr-namespace:AppDuolingoClone.ContentViews"
-    x:Class="AppDuolingoClone.ContentViews.LessonGroupBonusContentView"
->
+    xmlns:contentViews="clr-namespace:AppDuolingoClone.ContentViews">
     <ContentView.Content>
         <StackLayout>
-            <BoxView
-                Style="{StaticResource DivisorLine}"
-            />
+            <BoxView Style="{StaticResource DivisorLine}" />
 
             <FlexLayout
+                AlignItems="Center"
+                BindableLayout.ItemsSource="{Binding Lessons}"
                 Direction="Row"
                 HeightRequest="180"
-                BindableLayout.ItemsSource="{Binding Lessons}"
-                AlignItems="Center"
-                JustifyContent="Center"
-            >
+                JustifyContent="Center">
                 <BindableLayout.ItemTemplate>
                     <DataTemplate>
                         <contentViews:BonusContentView />
@@ -25,9 +21,7 @@
                 </BindableLayout.ItemTemplate>
             </FlexLayout>
 
-            <BoxView
-                Style="{StaticResource DivisorLine}"
-            />
+            <BoxView Style="{StaticResource DivisorLine}" />
         </StackLayout>
     </ContentView.Content>
 </ContentView>

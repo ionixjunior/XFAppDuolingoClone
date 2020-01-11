@@ -1,65 +1,40 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8" ?>
 <ContentView
-    xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="AppDuolingoClone.Views.TitleViews.LessonsTitleView"
->
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
     <ContentView.Content>
-        <FlexLayout
-            JustifyContent="SpaceBetween"
-            Margin="{OnPlatform Android='0,0,15,0', iOS='0'}"
-        >
-            <Image
-                Source="navbar_english.png"
-                HeightRequest="40"
-            />
+        <FlexLayout Margin="{OnPlatform Android='0,0,15,0', iOS='0'}" JustifyContent="SpaceBetween">
+            <Image HeightRequest="40" Source="navbar_english.png" />
 
-            <StackLayout
-                Orientation="Horizontal"
-            >
-                <Image
-                    Source="navbar_crown.png"
-                    HeightRequest="40"
-                />
+            <StackLayout Orientation="Horizontal">
+                <Image HeightRequest="40" Source="navbar_crown.png" />
 
                 <Label
+                    FontSize="Large"
                     Text="74"
-                    VerticalTextAlignment="Center"
-                    FontSize="Large"
                     TextColor="#f3c747"
-                />
+                    VerticalTextAlignment="Center" />
             </StackLayout>
 
-            <StackLayout
-                Orientation="Horizontal"
-            >
-                <Image
-                    Source="navbar_fire.png"
-                    HeightRequest="40"
-                />
+            <StackLayout Orientation="Horizontal">
+                <Image HeightRequest="40" Source="navbar_fire.png" />
 
                 <Label
+                    FontSize="Large"
                     Text="0"
-                    VerticalTextAlignment="Center"
-                    FontSize="Large"
                     TextColor="#b0afaf"
-                />
+                    VerticalTextAlignment="Center" />
             </StackLayout>
 
-            <StackLayout
-                Orientation="Horizontal"
-            >
-                <Image
-                    Source="navbar_diamont.png"
-                    HeightRequest="40"
-                />
+            <StackLayout Orientation="Horizontal">
+                <Image HeightRequest="40" Source="navbar_diamont.png" />
 
                 <Label
-                    Text="204"
-                    VerticalTextAlignment="Center"
                     FontSize="Large"
+                    Text="204"
                     TextColor="#de5c56"
-                />
+                    VerticalTextAlignment="Center" />
             </StackLayout>
         </FlexLayout>
     </ContentView.Content>

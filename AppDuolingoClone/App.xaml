@@ -1,28 +1,25 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <prism:PrismApplication
+    x:Class="AppDuolingoClone.App"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:d="http://xamarin.com/schemas/2014/forms/design"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:prism="clr-namespace:Prism.DryIoc;assembly=Prism.DryIoc.Forms"
-    mc:Ignorable="d"
-    x:Class="AppDuolingoClone.App"
->
+    mc:Ignorable="d">
     <Application.Resources>
         <ResourceDictionary>
-            <OnPlatform 
-                x:Key="FontBold" 
-                x:TypeArguments="x:String" 
-                Android="Fonts/DINNextRoundedLTPro-Bold.ttf#DINNextRounded" 
-                iOS="DINNextRoundedLTPro-Bold" 
-            />
+            <OnPlatform
+                x:Key="FontBold"
+                x:TypeArguments="x:String"
+                Android="Fonts/DINNextRoundedLTPro-Bold.ttf#DINNextRounded"
+                iOS="DINNextRoundedLTPro-Bold" />
 
-            <OnPlatform 
-                x:Key="FontRegular" 
-                x:TypeArguments="x:String" 
-                Android="Fonts/DINNextRoundedLTPro-Regular.ttf#DINNextRounded" 
-                iOS="DINNextRoundedLTPro-Regular" 
-            />
+            <OnPlatform
+                x:Key="FontRegular"
+                x:TypeArguments="x:String"
+                Android="Fonts/DINNextRoundedLTPro-Regular.ttf#DINNextRounded"
+                iOS="DINNextRoundedLTPro-Regular" />
 
             <Color x:Key="SubTitleColor">#828282</Color>
             <Color x:Key="TrackColor">#e6e6e6</Color>

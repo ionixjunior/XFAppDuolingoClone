@@ -1,71 +1,62 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8" ?>
 <ContentView
+    x:Class="AppDuolingoClone.ContentViews.LessonContentView"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:controls="clr-namespace:AppDuolingoClone.Controls"
     xmlns:converters="clr-namespace:AppDuolingoClone.Converters"
-    x:Class="AppDuolingoClone.ContentViews.LessonContentView"
-    Margin="10,0"
->
+    Margin="10,0">
     <ContentView.Content>
-        <StackLayout
-            Spacing="15"
-        >
+        <StackLayout Spacing="15">
             <Grid
-                WidthRequest="100"
                 HeightRequest="100"
                 HorizontalOptions="Center"
                 VerticalOptions="Center"
-            >
+                WidthRequest="100">
                 <controls:CircularProgressBar
-                    WidthRequest="100"
                     HeightRequest="100"
-                    TrackColor="{StaticResource TrackColor}"
-                    ProgressColor="{StaticResource ProgressColor}"
                     Progress="{Binding Progress}"
+                    ProgressColor="{StaticResource ProgressColor}"
                     Rotation="135"
-                />
+                    TrackColor="{StaticResource TrackColor}"
+                    WidthRequest="100" />
 
                 <BoxView
                     BackgroundColor="{Binding Color}"
-                    WidthRequest="{OnPlatform Android=66, iOS=74}"
-                    HeightRequest="{OnPlatform Android=66, iOS=74}"
-                    CornerRadius="{OnPlatform Android=33, iOS=37}"
+                    CornerRadius="{OnPlatform Android=33,
+                                              iOS=37}"
+                    HeightRequest="{OnPlatform Android=66,
+                                               iOS=74}"
                     HorizontalOptions="Center"
                     VerticalOptions="Center"
-                />
+                    WidthRequest="{OnPlatform Android=66,
+                                              iOS=74}" />
 
                 <Image
-                    Source="{Binding Icon}"
-                    WidthRequest="40"
                     HeightRequest="40"
                     HorizontalOptions="Center"
-                />
+                    Source="{Binding Icon}"
+                    WidthRequest="40" />
 
                 <Grid
                     HorizontalOptions="End"
                     VerticalOptions="End"
-                    WidthRequest="50"
-                >
-                    <Image
-                        Source="{Binding Level, Converter={converters:LevelToImageCrownConverter}}"
-                    />
+                    WidthRequest="50">
+                    <Image Source="{Binding Level, Converter={converters:LevelToImageCrownConverter}}" />
 
                     <Label
-                        Text="{Binding Level}"
-                        TextColor="#ce8830"
                         FontSize="20"
                         HorizontalTextAlignment="Center"
-                        VerticalTextAlignment="Center"
-                    />
+                        Text="{Binding Level}"
+                        TextColor="#ce8830"
+                        VerticalTextAlignment="Center" />
                 </Grid>
             </Grid>
 
             <Label
-                Text="{Binding Name}"
                 FontSize="20"
                 HorizontalTextAlignment="Center"
-            />
+                Text="{Binding Name}" />
         </StackLayout>
     </ContentView.Content>
 </ContentView>

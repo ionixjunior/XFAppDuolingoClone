@@ -1,34 +1,29 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8" ?>
 <ContentPage
+    x:Class="AppDuolingoClone.Views.LessonsView"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:controls="clr-namespace:AppDuolingoClone.Controls"
-    xmlns:templates="clr-namespace:AppDuolingoClone.Templates"
-    x:Class="AppDuolingoClone.Views.LessonsView"
->
+    xmlns:templates="clr-namespace:AppDuolingoClone.Templates">
     <ContentPage.Content>
         <AbsoluteLayout>
-            <ScrollView
-                AbsoluteLayout.LayoutBounds="1,1,1,1"
-                AbsoluteLayout.LayoutFlags="All"
-            >
+            <ScrollView AbsoluteLayout.LayoutBounds="1,1,1,1" AbsoluteLayout.LayoutFlags="All">
                 <FlexLayout
-                    Direction="Column"
-                    BindableLayout.ItemsSource="{Binding LessonGroup}"
                     BindableLayout.ItemTemplateSelector="{templates:LessonGroupDataTemplateSelector}"
-                />
+                    BindableLayout.ItemsSource="{Binding LessonGroup}"
+                    Direction="Column" />
             </ScrollView>
 
             <controls:FormsFloatingActionButton
-                IsVisible="{OnPlatform Android=true, iOS=false}"
                 AbsoluteLayout.LayoutBounds="1,1,1,1"
                 AbsoluteLayout.LayoutFlags="All"
-                HorizontalOptions="End"
-                VerticalOptions="End"
-                Command="{Binding NavigateToTrainingCommand}"
                 BackgroundColor="White"
+                Command="{Binding NavigateToTrainingCommand}"
+                HorizontalOptions="End"
                 ImageSource="fab_training"
-            />
+                IsVisible="{OnPlatform Android=true,
+                                       iOS=false}"
+                VerticalOptions="End" />
         </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>

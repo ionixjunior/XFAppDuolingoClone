@@ -1,9 +1,8 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8" ?>
 <ContentView
-    xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="AppDuolingoClone.Views.TitleViews.ProfileTitleView"
->
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
     <ContentView.Content>
         <Grid>
             <Grid.ColumnDefinitions>
@@ -14,18 +13,16 @@
 
             <Label
                 Grid.Column="1"
-                Text="Perfil"
-                HorizontalTextAlignment="Center"
-                VerticalTextAlignment="Center"
                 FontSize="Large"
+                HorizontalTextAlignment="Center"
+                Text="Perfil"
                 TextColor="#b0afaf"
-            />
+                VerticalTextAlignment="Center" />
 
             <Image
                 Grid.Column="2"
-                Source="navbar_configuration.png"
                 HeightRequest="40"
-            />
+                Source="navbar_configuration.png" />
         </Grid>
     </ContentView.Content>
 </ContentView>

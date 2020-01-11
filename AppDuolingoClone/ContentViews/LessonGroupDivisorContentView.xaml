@@ -1,14 +1,10 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8" ?>
 <ContentView
-    xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="AppDuolingoClone.ContentViews.LessonGroupDivisorContentView"
->
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
     <ContentView.Content>
-        <Grid
-            ColumnSpacing="0"
-            Margin="0,30"
-        >
+        <Grid Margin="0,30" ColumnSpacing="0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="100" />
@@ -17,46 +13,39 @@
 
             <BoxView
                 Grid.Column="0"
-                Style="{StaticResource DivisorLine}"
-                VerticalOptions="Center"
                 Margin="0,40,0,0"
-            />
+                Style="{StaticResource DivisorLine}"
+                VerticalOptions="Center" />
 
             <FlexLayout
                 Grid.Column="1"
+                AlignItems="Center"
+                BindableLayout.ItemsSource="{Binding Lessons}"
                 Direction="Row"
                 HeightRequest="100"
-                BindableLayout.ItemsSource="{Binding Lessons}"
-                AlignItems="Center"
-                JustifyContent="Center"
-            >
+                JustifyContent="Center">
                 <BindableLayout.ItemTemplate>
                     <DataTemplate>
                         <Grid>
-                            <Image
-                                Source="{Binding Icon}"
-                                HeightRequest="100"
-                            />
+                            <Image HeightRequest="100" Source="{Binding Icon}" />
 
                             <Label
-                                Text="{Binding Level}"
-                                TextColor="#ce8830"
+                                Margin="0,40,0,0"
                                 FontSize="25"
                                 HorizontalTextAlignment="Center"
-                                VerticalTextAlignment="Center"
-                                Margin="0,40,0,0"
-                            />
+                                Text="{Binding Level}"
+                                TextColor="#ce8830"
+                                VerticalTextAlignment="Center" />
                         </Grid>
                     </DataTemplate>
                 </BindableLayout.ItemTemplate>
             </FlexLayout>
-            
+
             <BoxView
                 Grid.Column="2"
-                Style="{StaticResource DivisorLine}"
-                VerticalOptions="Center"
                 Margin="0,40,0,0"
-            />
+                Style="{StaticResource DivisorLine}"
+                VerticalOptions="Center" />
         </Grid>
     </ContentView.Content>
 </ContentView>
