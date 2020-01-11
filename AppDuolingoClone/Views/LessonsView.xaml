@@ -6,7 +6,7 @@
     xmlns:controls="clr-namespace:AppDuolingoClone.Controls"
     xmlns:templates="clr-namespace:AppDuolingoClone.Templates">
     <ContentPage.Content>
-        <AbsoluteLayout>
+        <AbsoluteLayout Margin="{OnPlatform Android=0, iOS='0,0,0,66'}">
             <ScrollView AbsoluteLayout.LayoutBounds="1,1,1,1" AbsoluteLayout.LayoutFlags="All">
                 <FlexLayout
                     BindableLayout.ItemTemplateSelector="{templates:LessonGroupDataTemplateSelector}"
