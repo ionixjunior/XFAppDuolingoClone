@@ -5,54 +5,61 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:controls="clr-namespace:AppDuolingoClone.Controls">
     <ContentView.Content>
-        <CollectionView ItemsSource="{Binding Achievements}">
-            <CollectionView.ItemTemplate>
+        <ListView
+            HasUnevenRows="True"
+            ItemsSource="{Binding Achievements}"
+            SeparatorVisibility="None">
+            <ListView.ItemTemplate>
                 <DataTemplate>
-                    <FlexLayout Padding="20">
-                        <Grid HeightRequest="130" WidthRequest="200">
-                            <Image Source="{Binding Icon}" WidthRequest="200" />
+                    <ViewCell>
+                        <ViewCell.View>
+                            <FlexLayout Padding="20">
+                                <Grid HeightRequest="130" WidthRequest="200">
+                                    <Image Source="{Binding Icon}" WidthRequest="200" />
 
-                            <Label
-                                FontSize="20"
-                                HorizontalTextAlignment="Center"
-                                Text="{Binding Level}"
-                                TextColor="White"
-                                TranslationY="-20"
-                                VerticalTextAlignment="End" />
-                        </Grid>
+                                    <Label
+                                        FontSize="20"
+                                        HorizontalTextAlignment="Center"
+                                        Text="{Binding Level}"
+                                        TextColor="White"
+                                        TranslationY="-20"
+                                        VerticalTextAlignment="End" />
+                                </Grid>
 
-                        <StackLayout Margin="20,0,0,0" Spacing="0">
-                            <Label FontSize="26" Text="{Binding Name}" />
+                                <StackLayout Margin="20,0,0,0" Spacing="0">
+                                    <Label FontSize="26" Text="{Binding Name}" />
 
-                            <Label
-                                FontFamily="{StaticResource FontRegular}"
-                                FontSize="22"
-                                Text="{Binding Description}"
-                                TextColor="#777777" />
+                                    <Label
+                                        FontFamily="{StaticResource FontRegular}"
+                                        FontSize="22"
+                                        Text="{Binding Description}"
+                                        TextColor="#777777" />
 
-                            <Grid>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="*" />
-                                    <ColumnDefinition Width="Auto" />
-                                </Grid.ColumnDefinitions>
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="Auto" />
+                                        </Grid.ColumnDefinitions>
 
-                                <controls:HorizontalProgressBar
-                                    Grid.Column="0"
-                                    HeightRequest="30"
-                                    Progress="0.5"
-                                    ProgressColor="{StaticResource ProgressColor}"
-                                    TrackColor="{StaticResource TrackColor}"
-                                    VerticalOptions="Center" />
+                                        <controls:HorizontalProgressBar
+                                            Grid.Column="0"
+                                            HeightRequest="30"
+                                            Progress="{Binding Progress}"
+                                            ProgressColor="{StaticResource ProgressColor}"
+                                            TrackColor="{StaticResource TrackColor}"
+                                            VerticalOptions="Center" />
 
-                                <Label
-                                    Grid.Column="1"
-                                    Text="{Binding Status}"
-                                    TextColor="#afafae" />
-                            </Grid>
-                        </StackLayout>
-                    </FlexLayout>
+                                        <Label
+                                            Grid.Column="1"
+                                            Text="{Binding Status}"
+                                            TextColor="#afafae" />
+                                    </Grid>
+                                </StackLayout>
+                            </FlexLayout>
+                        </ViewCell.View>
+                    </ViewCell>
                 </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
+            </ListView.ItemTemplate>
+        </ListView>
     </ContentView.Content>
 </ContentView>
