@@ -19,7 +19,8 @@ namespace AppDuolingoClone.Fakes
                         "Majestade",
                         "Ganhe 80 coroas",
                         0.9875,
-                        "79/80"
+                        "79/80",
+                        true
                     ),
                     GetAchievement(
                         "profile_achievements_02",
@@ -27,7 +28,8 @@ namespace AppDuolingoClone.Fakes
                         "Intelectual",
                         "Aprenda 1.000 novas palavras em um curso",
                         0.863,
-                        "863/1K"
+                        "863/1K",
+                        true
                     ),
                     GetAchievement(
                         "profile_achievements_03",
@@ -35,7 +37,8 @@ namespace AppDuolingoClone.Fakes
                         "Na Mosca",
                         "Complete 100 lições sem errar nada",
                         0.81,
-                        "81/100"
+                        "81/100",
+                        true
                     ),
                     GetAchievement(
                         "profile_achievements_04",
@@ -43,7 +46,8 @@ namespace AppDuolingoClone.Fakes
                         "Sabe-tudo",
                         "Ganhe 7500 XP",
                         0.72,
-                        "5,4K/7,5K"
+                        "5,4K/7,5K",
+                        true
                     ),
                     GetAchievement(
                         "profile_achievements_05",
@@ -51,7 +55,8 @@ namespace AppDuolingoClone.Fakes
                         "Fogueira",
                         "Alcance uma ofensiva de 14 dias",
                         0.5,
-                        "7/14"
+                        "7/14",
+                        true
                     ),
                     GetAchievement(
                         "profile_achievements_06",
@@ -59,7 +64,8 @@ namespace AppDuolingoClone.Fakes
                         "Estrategista",
                         "Você leu uma dica",
                         1,
-                        string.Empty
+                        string.Empty,
+                        false
                     )
                 };
             });
@@ -71,7 +77,8 @@ namespace AppDuolingoClone.Fakes
             string name,
             string description,
             double progress,
-            string status)
+            string status,
+            bool isActive)
         {
             return new Achievement
             {
@@ -80,7 +87,8 @@ namespace AppDuolingoClone.Fakes
                 Name = name,
                 Description = description,
                 Progress = progress,
-                Status = status
+                Status = status,
+                IsActive = isActive
             };
         }
     }
