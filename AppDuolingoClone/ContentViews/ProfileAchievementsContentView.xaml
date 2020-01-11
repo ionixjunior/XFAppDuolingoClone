@@ -3,7 +3,8 @@
     x:Class="AppDuolingoClone.ContentViews.ProfileAchievementsContentView"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:controls="clr-namespace:AppDuolingoClone.Controls">
+    xmlns:controls="clr-namespace:AppDuolingoClone.Controls"
+    xmlns:converters="clr-namespace:AppDuolingoClone.Converters">
     <ContentView.Content>
         <ListView
             HasUnevenRows="True"
@@ -21,7 +22,7 @@
                                         FontSize="20"
                                         HorizontalTextAlignment="Center"
                                         Text="{Binding Level}"
-                                        TextColor="White"
+                                        TextColor="{Binding IsActive, Converter={converters:AchievementsActiveToTextColorConverter}}"
                                         TranslationY="-20"
                                         VerticalTextAlignment="End" />
                                 </Grid>
