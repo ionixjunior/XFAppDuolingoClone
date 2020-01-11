@@ -27,15 +27,19 @@
                                 </Grid>
 
                                 <StackLayout Margin="20,0,0,0" Spacing="0">
-                                    <Label FontSize="26" Text="{Binding Name}" />
+                                    <Label
+                                        FontSize="26"
+                                        Text="{Binding Name}"
+                                        VerticalOptions="FillAndExpand" />
 
                                     <Label
                                         FontFamily="{StaticResource FontRegular}"
                                         FontSize="22"
                                         Text="{Binding Description}"
-                                        TextColor="#777777" />
+                                        TextColor="#777777"
+                                        VerticalOptions="FillAndExpand" />
 
-                                    <Grid>
+                                    <Grid ColumnSpacing="20" VerticalOptions="FillAndExpand">
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition Width="*" />
                                             <ColumnDefinition Width="Auto" />
@@ -51,8 +55,10 @@
 
                                         <Label
                                             Grid.Column="1"
+                                            FontSize="20"
                                             Text="{Binding Status}"
-                                            TextColor="#afafae" />
+                                            TextColor="#afafae"
+                                            VerticalOptions="Center" />
                                     </Grid>
                                 </StackLayout>
                             </FlexLayout>
