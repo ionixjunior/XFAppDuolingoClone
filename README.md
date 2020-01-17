@@ -13,9 +13,17 @@ Para quem prefere Youtube, criei uma [playlist com todas as lives do clone do Du
 <kbd><img width="250" src="art/android_lessons_2.png" /></kbd>
 <kbd><img width="250" src="art/android_lessons_3.png" /></kbd>
 
+#### Tela do perfil
+<kbd><img width="250" src="art/android_profile_1.png" /></kbd>
+<kbd><img width="250" src="art/android_profile_2.png" /></kbd>
+
 ### iOS
 
 #### Tela de lições
 <kbd><img width="250" src="art/ios_lessons_1.png" /></kbd>
 <kbd><img width="250" src="art/ios_lessons_2.png" /></kbd>
 <kbd><img width="250" src="art/ios_lessons_1.png" /></kbd>
+
+#### Tela do perfil
+<kbd><img width="250" src="art/ios_profile_1.png" /></kbd>
+<kbd><img width="250" src="art/ios_profile_2.png" /></kbd>
