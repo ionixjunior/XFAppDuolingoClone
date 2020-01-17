@@ -73,6 +73,7 @@
     <Compile Include="Renderers\CustomTabbedPageRenderer.cs" />
     <Compile Include="Utils\ResourceUtil.cs" />
     <Compile Include="Renderers\CircularProgressBarRenderer.cs" />
+    <Compile Include="Renderers\HorizontalProgressBarRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -269,6 +270,14 @@
       <Generator></Generator>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\profile_achievements_06.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\horizontal_progress_bar.xml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\horizontal_track_bar.xml">
       <SubType></SubType>
       <Generator></Generator>
     </AndroidResource>
