@@ -195,5 +195,6 @@
     <BundleResource Include="Resources\profile_achievements_01.png" />
     <BundleResource Include="Resources\profile_achievements_02.png" />
     <BundleResource Include="Resources\profile_achievements_06.png" />
+    <BundleResource Include="Resources\profile_friends_gift.png" />
   </ItemGroup>
 </Project>
