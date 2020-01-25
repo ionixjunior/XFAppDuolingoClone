@@ -16,6 +16,8 @@ Para quem prefere Youtube, criei uma [playlist com todas as lives do clone do Du
 #### Tela do perfil
 <kbd><img width="250" src="art/android_profile_1.png" /></kbd>
 <kbd><img width="250" src="art/android_profile_2.png" /></kbd>
+<kbd><img width="250" src="art/android_profile_3.png" /></kbd>
+<kbd><img width="250" src="art/android_profile_4.png" /></kbd>
 
 ### iOS
 
@@ -27,3 +29,5 @@ Para quem prefere Youtube, criei uma [playlist com todas as lives do clone do Du
 #### Tela do perfil
 <kbd><img width="250" src="art/ios_profile_1.png" /></kbd>
 <kbd><img width="250" src="art/ios_profile_2.png" /></kbd>
+<kbd><img width="250" src="art/ios_profile_3.png" /></kbd>
+<kbd><img width="250" src="art/ios_profile_4.png" /></kbd>
