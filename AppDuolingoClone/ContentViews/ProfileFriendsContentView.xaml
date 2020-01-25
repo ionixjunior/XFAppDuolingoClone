@@ -5,6 +5,62 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
     <ContentView.Content>
         <CollectionView ItemsSource="{Binding Friends}">
+            <CollectionView.Header>
+                <StackLayout Padding="25,25,25,0">
+                    <Grid ColumnSpacing="25">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Image
+                            Grid.Column="0"
+                            HeightRequest="100"
+                            Source="profile_friends_gift"
+                            VerticalOptions="Start" />
+
+                        <StackLayout Grid.Column="1" Spacing="10">
+                            <Label FontSize="24" Text="Ganhe Duolingo Plus de graça!" />
+
+                            <Label
+                                FontFamily="{StaticResource FontRegular}"
+                                FontSize="24"
+                                Text="Ganhe um mês de Duolingo Plus grátis para cada amigo que entrar pro Duolingo."
+                                TextColor="{StaticResource SubTitleColor}" />
+                        </StackLayout>
+                    </Grid>
+
+                    <Grid Margin="0,30,0,0">
+                        <BoxView
+                            BackgroundColor="#1799d5"
+                            CornerRadius="20"
+                            HeightRequest="60" />
+
+                        <Button
+                            BackgroundColor="#1bb0f7"
+                            CornerRadius="20"
+                            HeightRequest="60"
+                            Style="{StaticResource ElevatedButton}"
+                            Text="CONVIDAR AMIGOS"
+                            TextColor="White" />
+                    </Grid>
+
+                    <FlexLayout
+                        Margin="0,40,0,0"
+                        AlignItems="Center"
+                        JustifyContent="SpaceBetween">
+                        <Label FontSize="30" Text="Total de XP" />
+
+                        <Button
+                            BackgroundColor="Transparent"
+                            FontFamily="{StaticResource FontBold}"
+                            FontSize="22"
+                            Text="ADICIONAR"
+                            TextColor="#1bb0f7" />
+                    </FlexLayout>
+                </StackLayout>
+            </CollectionView.Header>
+
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <Grid Padding="25,10" ColumnSpacing="15">
