@@ -4,6 +4,46 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
     <ContentView.Content>
-        <Label FontSize="40" Text="Amigos view" />
+        <CollectionView ItemsSource="{Binding Friends}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Padding="25,10" ColumnSpacing="15">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="80" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+
+                        <Frame
+                            Grid.Column="0"
+                            Margin="10"
+                            Padding="0"
+                            CornerRadius="30"
+                            HasShadow="false"
+                            IsClippedToBounds="True">
+                            <Image
+                                HeightRequest="60"
+                                Source="{Binding Photo}"
+                                WidthRequest="60" />
+                        </Frame>
+
+                        <Label
+                            Grid.Column="1"
+                            FontSize="24"
+                            LineBreakMode="TailTruncation"
+                            Text="{Binding Name}"
+                            VerticalTextAlignment="Center" />
+
+                        <Label
+                            Grid.Column="2"
+                            FontFamily="{StaticResource FontRegular}"
+                            FontSize="24"
+                            Text="{Binding Experience}"
+                            TextColor="{StaticResource SubTitleColor}"
+                            VerticalTextAlignment="Center" />
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
     </ContentView.Content>
 </ContentView>
