@@ -18,7 +18,7 @@
     </ContentPage.Resources>
 
     <ContentPage.Content>
-        <Grid Margin="{OnPlatform Android=0, iOS='0,50,0,0'}" RowSpacing="20">
+        <Grid Margin="{OnPlatform Android=0, iOS='0,50,0,66'}" RowSpacing="10">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
@@ -55,7 +55,19 @@
             </StackLayout>
 
             <BoxView Grid.Row="1" Style="{StaticResource DivisorLine}" />
-            <BoxView Grid.Row="2" BackgroundColor="Green" />
+
+            <StackLayout
+                Grid.Row="2"
+                Margin="25,0"
+                VerticalOptions="Center">
+                <Image HeightRequest="{OnPlatform Android=100, iOS=150}" Source="ranking_duo_sleeping" />
+
+                <Label
+                    FontFamily="{StaticResource FontRegular}"
+                    FontSize="24"
+                    HorizontalTextAlignment="Center"
+                    Text="Conclua uma lição para entrar no ranking dessa semana" />
+            </StackLayout>
         </Grid>
     </ContentPage.Content>
 </ContentPage>
