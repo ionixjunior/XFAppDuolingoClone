@@ -27,7 +27,7 @@
 
             <StackLayout Grid.Row="0">
                 <ScrollView Orientation="Horizontal">
-                    <StackLayout Orientation="Horizontal">
+                    <StackLayout Margin="15,0" Orientation="Horizontal">
                         <Image Source="ranking_level_1" Style="{StaticResource RankingLevelHighlight}" />
                         <Image Source="ranking_level" Style="{StaticResource RankingLevel}" />
                         <Image Source="ranking_level" Style="{StaticResource RankingLevel}" />
