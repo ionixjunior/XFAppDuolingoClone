@@ -21,7 +21,7 @@
         <Grid Margin="{OnPlatform Android=0, iOS='0,50,0,0'}" RowSpacing="20">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
-                <RowDefinition Height="2" />
+                <RowDefinition Height="Auto" />
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
 
@@ -54,7 +54,7 @@
                     TextColor="{StaticResource SubTitleColor}" />
             </StackLayout>
 
-            <BoxView Grid.Row="1" BackgroundColor="Gray" />
+            <BoxView Grid.Row="1" Style="{StaticResource DivisorLine}" />
             <BoxView Grid.Row="2" BackgroundColor="Green" />
         </Grid>
     </ContentPage.Content>
