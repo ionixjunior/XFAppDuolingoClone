@@ -200,5 +200,8 @@
     <BundleResource Include="Resources\profile_friends_homer.png" />
     <BundleResource Include="Resources\profile_friends_bart.png" />
     <BundleResource Include="Resources\profile_friends_lisa.png" />
+    <BundleResource Include="Resources\ranking_duo_sleeping.png" />
+    <BundleResource Include="Resources\ranking_level_1.png" />
+    <BundleResource Include="Resources\ranking_level.png" />
   </ItemGroup>
 </Project>
