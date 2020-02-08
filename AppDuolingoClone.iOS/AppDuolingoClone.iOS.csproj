@@ -203,5 +203,17 @@
     <BundleResource Include="Resources\ranking_duo_sleeping.png" />
     <BundleResource Include="Resources\ranking_level_1.png" />
     <BundleResource Include="Resources\ranking_level.png" />
+    <BundleResource Include="Resources\store_duo_plus.png" />
+    <BundleResource Include="Resources\store_item_6.png" />
+    <BundleResource Include="Resources\store_item_5.png" />
+    <BundleResource Include="Resources\store_item_4.png" />
+    <BundleResource Include="Resources\store_item_3.png" />
+    <BundleResource Include="Resources\store_item_2.png" />
+    <BundleResource Include="Resources\store_item_1.png" />
+    <BundleResource Include="Resources\store_item_7.png" />
+    <BundleResource Include="Resources\store_item_8.png" />
+    <BundleResource Include="Resources\store_item_9.png" />
+    <BundleResource Include="Resources\store_diamond.png" />
+    <BundleResource Include="Resources\store_checked.png" />
   </ItemGroup>
 </Project>
