@@ -39,6 +39,7 @@ namespace AppDuolingoClone
             containerRegistry.Register<IStoriesService, StoriesServiceFake>();
             containerRegistry.Register<IAchievementsService, AchievementsServiceFake>();
             containerRegistry.Register<IFriendsService, FriendsServiceFake>();
+            containerRegistry.Register<IStoreService, StoreServiceFake>();
         }
 
         protected override void OnStart()
