@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    x:Class="AppDuolingoClone.ContentViews.StoreItemNormalContentView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <ContentView.Content>
+        <Frame
+            Margin="2,0"
+            BorderColor="#E5E5E5"
+            CornerRadius="20"
+            HasShadow="false">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Image
+                    Grid.Column="0"
+                    Source="{Binding Icon}"
+                    VerticalOptions="Start"
+                    WidthRequest="100" />
+
+                <StackLayout Grid.Column="1" Spacing="10">
+                    <Label FontSize="Large" Text="{Binding Name}" />
+
+                    <Label
+                        FontFamily="{StaticResource FontRegular}"
+                        FontSize="Large"
+                        Text="{Binding Description}"
+                        TextColor="{StaticResource SubTitleColor}" />
+
+                    <Grid HeightRequest="40">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+
+                        <Image
+                            Grid.Column="0"
+                            HeightRequest="40"
+                            Source="store_checked" />
+                        <Label
+                            Grid.Column="1"
+                            FontSize="Large"
+                            Text="CHEIA"
+                            TextColor="#A8A8A8"
+                            VerticalTextAlignment="Center" />
+                    </Grid>
+                </StackLayout>
+            </Grid>
+        </Frame>
+    </ContentView.Content>
+</ContentView>

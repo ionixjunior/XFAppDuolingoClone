@@ -2,9 +2,21 @@
 <ContentPage
     x:Class="AppDuolingoClone.Views.StoreView"
     xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:templates="clr-namespace:AppDuolingoClone.Templates">
     <ContentPage.Content>
-        <CollectionView Margin="20" ItemsSource="{Binding Groups}">
+        <CollectionView
+            Margin="{OnPlatform Android=20,
+                                iOS='20,20,20,70'}"
+            IsGrouped="true"
+            ItemSizingStrategy="MeasureAllItems"
+            ItemTemplate="{templates:StoreItemDataTemplate}"
+            ItemsSource="{Binding Groups}"
+            VerticalScrollBarVisibility="Never">
+            <CollectionView.ItemsLayout>
+                <LinearItemsLayout ItemSpacing="20" Orientation="Vertical" />
+            </CollectionView.ItemsLayout>
+
             <CollectionView.Header>
                 <Grid ColumnSpacing="0">
                     <Grid.ColumnDefinitions>
@@ -51,6 +63,24 @@
                     </Grid>
                 </Grid>
             </CollectionView.Header>
+
+            <CollectionView.GroupHeaderTemplate>
+                <DataTemplate>
+                    <Label
+                        Margin="0,20"
+                        FontSize="Title"
+                        Text="{Binding Name}"
+                        VerticalTextAlignment="Center" />
+                </DataTemplate>
+            </CollectionView.GroupHeaderTemplate>
+
+            <CollectionView.GroupFooterTemplate>
+                <DataTemplate>
+                    <ContentView />
+                </DataTemplate>
+            </CollectionView.GroupFooterTemplate>
+
+
         </CollectionView>
     </ContentPage.Content>
 </ContentPage>
