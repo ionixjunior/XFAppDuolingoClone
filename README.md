@@ -13,6 +13,10 @@ Para quem prefere Youtube, criei uma [playlist com todas as lives do clone do Du
 <kbd><img width="250" src="art/android_lessons_2.png" /></kbd>
 <kbd><img width="250" src="art/android_lessons_3.png" /></kbd>
 
+#### Tela de histórias
+<kbd><img width="250" src="art/android_stories_1.png" /></kbd>
+<kbd><img width="250" src="art/android_stories_2.png" /></kbd>
+
 #### Tela do perfil
 <kbd><img width="250" src="art/android_profile_1.png" /></kbd>
 <kbd><img width="250" src="art/android_profile_2.png" /></kbd>
@@ -22,12 +26,19 @@ Para quem prefere Youtube, criei uma [playlist com todas as lives do clone do Du
 #### Tela do ranking
 <kbd><img width="250" src="art/android_ranking_1.png" /></kbd>
 
+#### Tela da loja
+<kbd><img width="250" src="art/android_store_1.png" /></kbd>
+<kbd><img width="250" src="art/android_store_2.png" /></kbd>
+
 ### iOS
 
 #### Tela de lições
 <kbd><img width="250" src="art/ios_lessons_1.png" /></kbd>
 <kbd><img width="250" src="art/ios_lessons_2.png" /></kbd>
 <kbd><img width="250" src="art/ios_lessons_1.png" /></kbd>
+
+#### Tela de histórias
+<kbd><img width="250" src="art/ios_stories_1.png" /></kbd>
 
 #### Tela do perfil
 <kbd><img width="250" src="art/ios_profile_1.png" /></kbd>
@@ -37,3 +48,7 @@ Para quem prefere Youtube, criei uma [playlist com todas as lives do clone do Du
 
 #### Tela do ranking
 <kbd><img width="250" src="art/ios_ranking_1.png" /></kbd>
+
+#### Tela da loja
+<kbd><img width="250" src="art/ios_store_1.png" /></kbd>
+<kbd><img width="250" src="art/ios_store_2.png" /></kbd>
