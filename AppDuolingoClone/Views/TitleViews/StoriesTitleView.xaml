@@ -28,7 +28,7 @@
             </StackLayout>
 
             <StackLayout Orientation="Horizontal">
-                <Image HeightRequest="40" Source="navbar_diamont.png" />
+                <Image HeightRequest="40" Source="navbar_heart.png" />
 
                 <Label
                     FontSize="Large"

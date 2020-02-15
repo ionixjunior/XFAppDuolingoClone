@@ -20,12 +20,12 @@
                 VerticalTextAlignment="Center" />
 
             <StackLayout Grid.Column="2" Orientation="Horizontal">
-                <Image HeightRequest="40" Source="navbar_diamont.png" />
+                <Image HeightRequest="40" Source="navbar_diamond.png" />
 
                 <Label
                     FontSize="Large"
                     Text="204"
-                    TextColor="#de5c56"
+                    TextColor="#1bb0f7"
                     VerticalTextAlignment="Center" />
             </StackLayout>
         </Grid>
