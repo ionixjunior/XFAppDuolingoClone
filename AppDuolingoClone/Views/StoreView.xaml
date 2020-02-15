@@ -6,8 +6,8 @@
     xmlns:templates="clr-namespace:AppDuolingoClone.Templates">
     <ContentPage.Content>
         <CollectionView
-            Margin="{OnPlatform Android=20,
-                                iOS='20,20,20,70'}"
+            Margin="{OnPlatform Android='20,0',
+                                iOS='20,0,20,70'}"
             IsGrouped="true"
             ItemSizingStrategy="MeasureAllItems"
             ItemTemplate="{templates:StoreItemDataTemplate}"
@@ -18,7 +18,7 @@
             </CollectionView.ItemsLayout>
 
             <CollectionView.Header>
-                <Grid ColumnSpacing="0">
+                <Grid Padding="0,20,0,0" ColumnSpacing="0">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*" />
                         <ColumnDefinition Width="110" />
@@ -65,6 +65,10 @@
                     </Grid>
                 </Grid>
             </CollectionView.Header>
+
+            <CollectionView.Footer>
+                <ContentView HeightRequest="20" />
+            </CollectionView.Footer>
 
             <CollectionView.GroupHeaderTemplate>
                 <DataTemplate>
