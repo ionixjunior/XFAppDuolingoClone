@@ -215,5 +215,7 @@
     <BundleResource Include="Resources\store_item_9.png" />
     <BundleResource Include="Resources\store_diamond.png" />
     <BundleResource Include="Resources\store_checked.png" />
+    <BundleResource Include="Resources\navbar_diamond.png" />
+    <BundleResource Include="Resources\navbar_heart.png" />
   </ItemGroup>
 </Project>
