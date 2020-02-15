@@ -21,7 +21,7 @@
                 <Grid ColumnSpacing="0">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="140" />
+                        <ColumnDefinition Width="110" />
                     </Grid.ColumnDefinitions>
 
                     <Frame
@@ -35,18 +35,19 @@
                     </Frame>
 
                     <Label
-                        Margin="20,0"
+                        Margin="20,60,20,0"
                         FontFamily="{StaticResource FontRegular}"
                         FontSize="Large"
                         Text="Baixe qualquer lição offline e diga adeus aos anúncios."
                         TextColor="White"
-                        VerticalTextAlignment="Center"
-                        WidthRequest="50" />
+                        VerticalTextAlignment="Start" />
 
                     <Grid
                         Grid.Column="0"
                         Grid.ColumnSpan="2"
                         Margin="20"
+                        HorizontalOptions="{OnPlatform Android=Start,
+                                                       iOS=Fill}"
                         VerticalOptions="End">
                         <BoxView
                             BackgroundColor="#91D8F7"
@@ -58,7 +59,8 @@
                             CornerRadius="20"
                             HeightRequest="60"
                             Style="{StaticResource ElevatedButton}"
-                            Text="EXPERIMENTE DE GRAÇA"
+                            Text="{OnPlatform Android='SAIBA MAIS',
+                                              iOS='EXPERIMENTE DE GRAÇA'}"
                             TextColor="#1CB1F5" />
                     </Grid>
                 </Grid>
