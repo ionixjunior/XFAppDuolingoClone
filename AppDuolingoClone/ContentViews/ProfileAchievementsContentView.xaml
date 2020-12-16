@@ -9,6 +9,7 @@
         <ListView
             CachingStrategy="RecycleElement"
             HasUnevenRows="True"
+            ItemSelected="OnAchievementSelected"
             ItemsSource="{Binding Achievements}"
             SeparatorVisibility="None">
             <ListView.ItemTemplate>
